@@ -44,15 +44,15 @@ export default function GalleryPreview() {
         {/* HEADER */}
         <div className="mb-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div>
-            <span className="mb-4 block text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+            <span className="mb-4 block text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
               Gallery
             </span>
 
-            <h2 className="max-w-2xl text-4xl font-bold leading-[1.05] tracking-tight text-[#0d2238] md:text-5xl lg:text-6xl">
+            <h2 className="max-w-2xl text-4xl font-bold leading-[1.05] tracking-tight text-[#174a70] md:text-5xl lg:text-6xl">
               Moments worth remembering.
             </h2>
 
-            <p className="mt-6 max-w-xl text-base leading-7 text-[#68737d] md:text-lg">
+            <p className="mt-6 max-w-xl text-base leading-7 text-[#5f6367] md:text-lg">
               Take a glimpse into learning, discovery, community and everyday
               life at T.I. Ahmadiyya International School.
             </p>
@@ -60,11 +60,11 @@ export default function GalleryPreview() {
 
           <Link
             href="/gallery"
-            className="group inline-flex w-fit items-center gap-4 text-sm font-bold uppercase tracking-[0.15em] text-[#0d2238]"
+            className="group inline-flex w-fit items-center gap-4 text-sm font-bold uppercase tracking-[0.15em] text-[#174a70]"
           >
             View full gallery
 
-            <span className="text-[#e8752b] transition-transform duration-300 group-hover:translate-x-2">
+            <span className="text-[#f2a07a] transition-transform duration-300 group-hover:translate-x-2">
               →
             </span>
           </Link>
@@ -103,17 +103,17 @@ export default function GalleryPreview() {
         </div>
 
         {/* BOTTOM CTA */}
-        <div className="mt-10 flex flex-col gap-5 border-t border-[#dfe4e8] pt-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-[#68737d]">
+        <div className="mt-10 flex flex-col gap-5 border-t border-[#e2e2e2] pt-8 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm text-[#5f6367]">
             Explore more photographs, events and school moments.
           </p>
 
           <Link
             href="/gallery"
-            className="group inline-flex items-center gap-3 text-sm font-bold uppercase tracking-[0.15em] text-[#0d2238]"
+            className="group inline-flex items-center gap-3 text-sm font-bold uppercase tracking-[0.15em] text-[#174a70]"
           >
             Explore AIS Gallery
-            <span className="text-[#e8752b] transition-transform duration-300 group-hover:translate-x-2">
+            <span className="text-[#f2a07a] transition-transform duration-300 group-hover:translate-x-2">
               →
             </span>
           </Link>
@@ -144,11 +144,11 @@ function GalleryItem({
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#081827]/80 via-[#081827]/10 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0d2f4a]/80 via-[#0d2f4a]/10 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
 
       {/* Content */}
       <div className="absolute inset-x-0 bottom-0 p-5 md:p-6">
-        <span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+        <span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
           {item.category}
         </span>
 
@@ -158,7 +158,7 @@ function GalleryItem({
 
         <div className="mt-3 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.15em] text-white/0 transition-all duration-300 group-hover:text-white/70">
           View gallery
-          <span className="text-[#e8752b]">→</span>
+          <span className="text-[#f2a07a]">→</span>
         </div>
       </div>
     </Link>

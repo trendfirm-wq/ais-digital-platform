@@ -104,16 +104,16 @@ export default function EventsPage() {
     <>
       <Header />
 
-      <main className="bg-[#f7f5f1] text-[#17212b]">
+      <main className="bg-[#ffffff] text-[#090909]">
 
         {/* =====================================================
             HERO
         ===================================================== */}
-        <section className="relative overflow-hidden bg-[#0d2238] text-white">
-          <div className="absolute -right-40 -top-40 h-[600px] w-[600px] rounded-full bg-[#e8752b]/10 blur-3xl" />
+        <section className="relative overflow-hidden bg-[#174a70] text-white">
+          <div className="absolute -right-40 -top-40 h-[600px] w-[600px] rounded-full bg-[#f2a07a]/10 blur-3xl" />
 
           <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-8 lg:pb-32 lg:pt-40">
-            <p className="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-[#e8752b]">
+            <p className="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-[#f2a07a]">
               AIS Events
             </p>
 
@@ -131,13 +131,13 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-[#e8752b] to-transparent" />
+          <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-[#f2a07a] to-transparent" />
         </section>
 
         {/* =====================================================
             EVENT NAVIGATION
         ===================================================== */}
-        <section className="sticky top-0 z-30 border-b border-[#dfe4e8] bg-[#f7f5f1]/95 backdrop-blur">
+        <section className="sticky top-0 z-30 border-b border-[#e2e2e2] bg-[#ffffff]/95 backdrop-blur">
           <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-6 py-4 lg:px-8">
             {tabs.map((tab) => {
               const active = activeTab === tab.id;
@@ -148,8 +148,8 @@ export default function EventsPage() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`shrink-0 rounded-full px-5 py-3 text-xs font-bold uppercase tracking-[0.14em] transition-all duration-300 ${
                     active
-                      ? "bg-[#0d2238] text-white"
-                      : "text-[#68737d] hover:bg-white hover:text-[#0d2238]"
+                      ? "bg-[#174a70] text-white"
+                      : "text-[#5f6367] hover:bg-white hover:text-[#174a70]"
                   }`}
                 >
                   {tab.label}
@@ -166,7 +166,7 @@ export default function EventsPage() {
 
           <div className="mb-12 flex items-end justify-between gap-8">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                 {tabs.find((tab) => tab.id === activeTab)?.label}
               </p>
 
@@ -179,7 +179,7 @@ export default function EventsPage() {
               </h2>
             </div>
 
-            <span className="hidden text-sm text-[#68737d] md:block">
+            <span className="hidden text-sm text-[#5f6367] md:block">
               {activeEvents.length}{" "}
               {activeEvents.length === 1 ? "event" : "events"}
             </span>
@@ -188,12 +188,13 @@ export default function EventsPage() {
           {/* =================================================
               EVENT CARDS
           ================================================= */}
-          <div className="space-y-8">
-            {activeEvents.map((event, index) => (
-             <Link
-  href="/events/national-ijtemaa-2026"
-  className="block overflow-hidden bg-white transition-shadow duration-500 hover:shadow-2xl"
->
+    <div className="space-y-8">
+  {activeEvents.map((event, index) => (
+    <Link
+      key={`${activeTab}-${event.title}-${index}`}
+      href="/events/national-ijtemaa-2026"
+      className="block overflow-hidden bg-white transition-shadow duration-500 hover:shadow-2xl"
+    >
                 <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
 
                   {/* IMAGE */}
@@ -206,7 +207,7 @@ export default function EventsPage() {
                     />
 
                     {activeTab === "ongoing" && (
-                      <div className="absolute left-6 top-6 flex items-center gap-2 rounded-full bg-[#e8752b] px-4 py-2 text-[10px] font-bold uppercase tracking-[0.16em] text-white">
+                      <div className="absolute left-6 top-6 flex items-center gap-2 rounded-full bg-[#f2a07a] px-4 py-2 text-[10px] font-bold uppercase tracking-[0.16em] text-white">
                         <span className="h-2 w-2 animate-pulse rounded-full bg-white" />
                         Live
                       </div>
@@ -215,7 +216,7 @@ export default function EventsPage() {
 
                   {/* CONTENT */}
                   <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16">
-                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
                       {event.category}
                     </p>
 
@@ -223,18 +224,18 @@ export default function EventsPage() {
                       {event.title}
                     </h3>
 
-                    <p className="mt-4 text-xs font-semibold uppercase tracking-[0.15em] text-[#68737d]">
+                    <p className="mt-4 text-xs font-semibold uppercase tracking-[0.15em] text-[#5f6367]">
                       {event.date}
                     </p>
 
-                    <p className="mt-7 max-w-xl text-base leading-8 text-[#68737d]">
+                    <p className="mt-7 max-w-xl text-base leading-8 text-[#5f6367]">
                       {event.description}
                     </p>
 
                     {/* DOCUMENTS */}
                     {"documents" in event && event.documents && (
                       <div className="mt-10">
-                        <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-[#0d2238]">
+                        <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-[#174a70]">
                           Event materials
                         </p>
 
@@ -242,9 +243,9 @@ export default function EventsPage() {
                           {event.documents.map((document) => (
                             <button
                               key={document.title}
-                              className="group flex items-center gap-4 border border-[#dfe4e8] p-4 text-left transition-all duration-300 hover:border-[#e8752b] hover:bg-[#fff1e8]"
+                              className="group flex items-center gap-4 border border-[#e2e2e2] p-4 text-left transition-all duration-300 hover:border-[#f2a07a] hover:bg-[#fff1eb]"
                             >
-                              <div className="flex h-11 w-11 shrink-0 items-center justify-center bg-[#0d2238] text-xs font-black text-white transition group-hover:bg-[#e8752b]">
+                              <div className="flex h-11 w-11 shrink-0 items-center justify-center bg-[#174a70] text-xs font-black text-white transition group-hover:bg-[#f2a07a]">
                                 PDF
                               </div>
 
@@ -253,7 +254,7 @@ export default function EventsPage() {
                                   {document.title}
                                 </p>
 
-                                <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[#68737d]">
+                                <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[#5f6367]">
                                   Open document →
                                 </p>
                               </div>
@@ -273,13 +274,13 @@ export default function EventsPage() {
             LIVE EVENT MEDIA
         ===================================================== */}
         {activeTab === "ongoing" && (
-          <section className="bg-[#0d2238] text-white">
+          <section className="bg-[#174a70] text-white">
             <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
 
               <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr]">
 
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+                  <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                     Live event coverage
                   </p>
 
@@ -315,7 +316,7 @@ export default function EventsPage() {
                         className="object-cover transition duration-700 hover:scale-105"
                       />
 
-                      <div className="absolute bottom-3 left-3 rounded-full bg-[#081827]/70 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.15em] backdrop-blur">
+                      <div className="absolute bottom-3 left-3 rounded-full bg-[#0d2f4a]/70 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.15em] backdrop-blur">
                         Moment {index + 1}
                       </div>
                     </div>
@@ -329,9 +330,9 @@ export default function EventsPage() {
         {/* =====================================================
             CTA
         ===================================================== */}
-        <section className="bg-[#f7f5f1]">
+        <section className="bg-[#ffffff]">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
-            <div className="rounded-[2rem] bg-[#e8752b] px-7 py-14 text-white md:px-12 lg:px-16 lg:py-16">
+            <div className="rounded-[2rem] bg-[#f2a07a] px-7 py-14 text-white md:px-12 lg:px-16 lg:py-16">
               <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60">
@@ -350,7 +351,7 @@ export default function EventsPage() {
 
                 <Link
                   href="/contact"
-                  className="w-fit rounded-full bg-white px-7 py-4 text-xs font-bold uppercase tracking-[0.15em] text-[#0d2238] transition hover:bg-[#0d2238] hover:text-white"
+                  className="w-fit rounded-full bg-white px-7 py-4 text-xs font-bold uppercase tracking-[0.15em] text-[#174a70] transition hover:bg-[#174a70] hover:text-white"
                 >
                   Contact AIS →
                 </Link>

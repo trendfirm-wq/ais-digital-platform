@@ -43,10 +43,10 @@ export default function SchoolLifePage() {
     <>
       <Header />
 
-      <main className="bg-[#f7f5f1] text-[#17212b]">
+      <main className="bg-[#ffffff] text-[#090909]">
 
         {/* HERO */}
-        <section className="relative min-h-[70vh] overflow-hidden bg-[#0d2238]">
+        <section className="relative min-h-[70vh] overflow-hidden bg-[#174a70]">
           <Image
             src="/images/school-life/student-life.jpg"
             alt="AIS student life"
@@ -55,11 +55,11 @@ export default function SchoolLifePage() {
             className="object-cover opacity-40"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0d2238] via-[#0d2238]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#174a70] via-[#174a70]/80 to-transparent" />
 
           <div className="relative flex min-h-[70vh] items-end px-6 py-20 md:px-12 lg:px-20 lg:py-28">
             <div className="mx-auto w-full max-w-7xl">
-              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#e8752b]">
+              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#f2a07a]">
                 School Life
               </p>
 
@@ -79,23 +79,23 @@ export default function SchoolLifePage() {
         <section className="px-6 py-20 md:px-12 lg:px-20 lg:py-28">
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 The AIS Experience
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#0d2238] md:text-5xl">
+              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-5xl">
                 More than the classroom.
               </h2>
             </div>
 
             <div className="max-w-3xl">
-              <p className="text-lg leading-8 text-[#68737d]">
+              <p className="text-lg leading-8 text-[#5f6367]">
                 School life at AIS will bring together the activities,
                 experiences and communities that help students develop beyond
                 their academic work.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-[#68737d]">
+              <p className="mt-6 text-lg leading-8 text-[#5f6367]">
                 As the school&apos;s official programmes and activities are
                 confirmed, this section will become the central place to
                 discover what students can experience throughout their AIS
@@ -109,11 +109,11 @@ export default function SchoolLifePage() {
         <section className="bg-white px-6 py-20 md:px-12 lg:px-20 lg:py-28">
           <div className="mx-auto max-w-7xl">
             <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Explore School Life
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#0d2238] md:text-5xl">
+              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#174a70] md:text-5xl">
                 Discover what happens beyond lessons.
               </h2>
             </div>
@@ -123,7 +123,7 @@ export default function SchoolLifePage() {
                 <Link
                   key={experience.number}
                   href={experience.href}
-                  className="group relative overflow-hidden rounded-[2rem] bg-[#0d2238]"
+                  className="group relative overflow-hidden rounded-[2rem] bg-[#174a70]"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
@@ -133,12 +133,12 @@ export default function SchoolLifePage() {
                       className="object-cover transition duration-700 group-hover:scale-105"
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d2238] via-[#0d2238]/40 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#174a70] via-[#174a70]/40 to-transparent" />
                   </div>
 
                   <div className="absolute inset-x-0 bottom-0 p-7 md:p-9">
                     <div className="flex items-start justify-between">
-                      <span className="text-sm font-semibold text-[#e8752b]">
+                      <span className="text-sm font-semibold text-[#f2a07a]">
                         {experience.number}
                       </span>
 
@@ -162,10 +162,10 @@ export default function SchoolLifePage() {
         </section>
 
         {/* COMMUNITY STRIP */}
-        <section className="bg-[#0d2238] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
+        <section className="bg-[#174a70] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Community
               </p>
 
@@ -183,7 +183,7 @@ export default function SchoolLifePage() {
 
               <Link
                 href="/community"
-                className="mt-8 inline-flex items-center rounded-full border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-[#0d2238]"
+                className="mt-8 inline-flex items-center rounded-full border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-[#174a70]"
               >
                 Explore Community →
               </Link>
@@ -196,18 +196,18 @@ export default function SchoolLifePage() {
           <div className="mx-auto max-w-7xl">
             <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                   Moments
                 </p>
 
-                <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#0d2238] md:text-5xl">
+                <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#174a70] md:text-5xl">
                   Life at AIS.
                 </h2>
               </div>
 
               <Link
                 href="/gallery"
-                className="font-semibold text-[#0d2238] underline decoration-[#e8752b] decoration-2 underline-offset-8"
+                className="font-semibold text-[#174a70] underline decoration-[#f2a07a] decoration-2 underline-offset-8"
               >
                 View Gallery →
               </Link>
@@ -254,7 +254,7 @@ export default function SchoolLifePage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-[#e8752b] px-6 py-20 md:px-12 lg:px-20">
+        <section className="bg-[#f2a07a] px-6 py-20 md:px-12 lg:px-20">
           <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
@@ -272,7 +272,7 @@ export default function SchoolLifePage() {
 
             <Link
               href="/admissions"
-              className="inline-flex w-fit items-center rounded-full bg-[#0d2238] px-7 py-4 font-semibold text-white transition hover:bg-[#081827]"
+              className="inline-flex w-fit items-center rounded-full bg-[#174a70] px-7 py-4 font-semibold text-white transition hover:bg-[#0d2f4a]"
             >
               Explore Admissions →
             </Link>

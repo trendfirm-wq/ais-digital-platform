@@ -45,9 +45,9 @@ const experiences = [
 
 export default function SchoolLife() {
   return (
-    <section className="relative overflow-hidden bg-[#f7f5f1] py-24 md:py-32">
+    <section className="relative overflow-hidden bg-[#ffffff] py-24 md:py-32">
       <Parallax
-        className="pointer-events-none absolute right-[-4%] top-20 hidden select-none text-[12rem] font-black uppercase leading-none tracking-[-0.08em] text-[#0d2238]/[0.035] lg:block xl:text-[18rem]"
+        className="pointer-events-none absolute right-[-4%] top-20 hidden select-none text-[12rem] font-black uppercase leading-none tracking-[-0.08em] text-[#174a70]/[0.035] lg:block xl:text-[18rem]"
         y={100}
       >
         LIFE
@@ -57,18 +57,18 @@ export default function SchoolLife() {
         <div className="mb-16 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
           <Reveal direction="left">
             <div>
-              <span className="mb-4 inline-block text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+              <span className="mb-4 inline-block text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Life at AIS
               </span>
 
-              <h2 className="max-w-xl text-4xl font-bold leading-[1.05] tracking-tight text-[#0d2238] md:text-5xl lg:text-6xl">
+              <h2 className="max-w-xl text-4xl font-bold leading-[1.05] tracking-tight text-[#174a70] md:text-5xl lg:text-6xl">
                 Learning doesn't stop at the classroom.
               </h2>
             </div>
           </Reveal>
 
           <Reveal direction="right" delay={0.15}>
-            <p className="max-w-2xl text-lg leading-8 text-[#68737d]">
+            <p className="max-w-2xl text-lg leading-8 text-[#5f6367]">
               School life is about discovering interests, building
               relationships, developing character and creating experiences
               that stay with students long after the school day ends.
@@ -90,7 +90,7 @@ export default function SchoolLife() {
           <div className="mt-14 flex justify-center">
             <a
               href="/school-life"
-              className="group inline-flex items-center gap-4 rounded-full bg-[#0d2238] px-7 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-[#e8752b]"
+              className="group inline-flex items-center gap-4 rounded-full bg-[#174a70] px-7 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-[#f2a07a]"
             >
               Discover School Life
               <span className="transition-transform duration-300 group-hover:translate-x-1">

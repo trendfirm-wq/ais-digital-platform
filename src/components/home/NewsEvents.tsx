@@ -38,28 +38,28 @@ const newsItems = [
 
 export default function NewsEvents() {
   return (
-    <section className="relative overflow-hidden bg-[#f7f5f1] py-24 md:py-32">
+    <section className="relative overflow-hidden bg-[#ffffff] py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         {/* HEADER */}
         <div className="mb-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div>
-            <span className="mb-4 block text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+            <span className="mb-4 block text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
               News & Events
             </span>
 
-            <h2 className="max-w-2xl text-4xl font-bold leading-[1.05] tracking-tight text-[#0d2238] md:text-5xl lg:text-6xl">
+            <h2 className="max-w-2xl text-4xl font-bold leading-[1.05] tracking-tight text-[#174a70] md:text-5xl lg:text-6xl">
               What's happening at AIS.
             </h2>
           </div>
 
           <Link
             href="/news"
-            className="group inline-flex w-fit items-center gap-4 text-sm font-bold uppercase tracking-[0.15em] text-[#0d2238]"
+            className="group inline-flex w-fit items-center gap-4 text-sm font-bold uppercase tracking-[0.15em] text-[#174a70]"
           >
             View all news
 
-            <span className="text-[#e8752b] transition-transform duration-300 group-hover:translate-x-2">
+            <span className="text-[#f2a07a] transition-transform duration-300 group-hover:translate-x-2">
               →
             </span>
           </Link>
@@ -71,7 +71,7 @@ export default function NewsEvents() {
           {/* FEATURED STORY */}
           <Link
             href={newsItems[0].href}
-            className="group relative min-h-[520px] overflow-hidden bg-[#0d2238]"
+            className="group relative min-h-[520px] overflow-hidden bg-[#174a70]"
           >
             <Image
               src={newsItems[0].image}
@@ -81,10 +81,10 @@ export default function NewsEvents() {
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-[#081827] via-[#081827]/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d2f4a] via-[#0d2f4a]/30 to-transparent" />
 
             <div className="absolute left-7 top-7 flex items-center gap-3">
-              <span className="bg-[#e8752b] px-4 py-2 text-xs font-bold uppercase tracking-[0.15em] text-white">
+              <span className="bg-[#f2a07a] px-4 py-2 text-xs font-bold uppercase tracking-[0.15em] text-white">
                 {newsItems[0].type}
               </span>
 
@@ -121,7 +121,7 @@ export default function NewsEvents() {
               <Link
                 key={item.id}
                 href={item.href}
-                className="group relative overflow-hidden bg-[#0d2238]"
+                className="group relative overflow-hidden bg-[#174a70]"
               >
                 <div className="relative h-full min-h-[250px]">
                   <Image
@@ -132,11 +132,11 @@ export default function NewsEvents() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#081827] via-[#081827]/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d2f4a] via-[#0d2f4a]/20 to-transparent" />
 
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <div className="mb-3 flex items-center gap-3">
-                      <span className="text-xs font-bold uppercase tracking-[0.15em] text-[#e8752b]">
+                      <span className="text-xs font-bold uppercase tracking-[0.15em] text-[#f2a07a]">
                         {item.type}
                       </span>
 
@@ -163,9 +163,9 @@ export default function NewsEvents() {
         </div>
 
         {/* EVENTS BAR */}
-        <div className="mt-6 grid border border-[#dfe4e8] bg-white md:grid-cols-[1fr_auto] md:items-center">
+        <div className="mt-6 grid border border-[#e2e2e2] bg-white md:grid-cols-[1fr_auto] md:items-center">
           <div className="flex items-center gap-5 p-6 md:p-8">
-            <div className="flex h-14 w-14 shrink-0 flex-col items-center justify-center bg-[#0d2238] text-white">
+            <div className="flex h-14 w-14 shrink-0 flex-col items-center justify-center bg-[#174a70] text-white">
               <span className="text-[10px] font-bold uppercase tracking-wider text-white/50">
                 AIS
               </span>
@@ -173,15 +173,15 @@ export default function NewsEvents() {
             </div>
 
             <div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Events
               </span>
 
-              <h3 className="mt-1 text-lg font-bold text-[#0d2238] md:text-xl">
+              <h3 className="mt-1 text-lg font-bold text-[#174a70] md:text-xl">
                 Explore the AIS events calendar
               </h3>
 
-              <p className="mt-1 text-sm text-[#68737d]">
+              <p className="mt-1 text-sm text-[#5f6367]">
                 Find upcoming school activities and important dates.
               </p>
             </div>
@@ -189,7 +189,7 @@ export default function NewsEvents() {
 
           <Link
             href="/events"
-            className="flex items-center justify-center border-t border-[#dfe4e8] px-8 py-5 text-sm font-bold uppercase tracking-[0.15em] text-[#0d2238] transition-colors hover:bg-[#e8752b] hover:text-white md:border-l md:border-t-0"
+            className="flex items-center justify-center border-t border-[#e2e2e2] px-8 py-5 text-sm font-bold uppercase tracking-[0.15em] text-[#174a70] transition-colors hover:bg-[#f2a07a] hover:text-white md:border-l md:border-t-0"
           >
             View Calendar →
           </Link>

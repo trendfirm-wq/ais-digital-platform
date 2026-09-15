@@ -34,10 +34,10 @@ export default function FacilitiesPage() {
     <>
       <Header />
 
-      <main className="bg-[#f7f5f1] text-[#17212b]">
+      <main className="bg-[#ffffff] text-[#090909]">
 
         {/* HERO */}
-        <section className="relative min-h-[68vh] overflow-hidden bg-[#0d2238]">
+        <section className="relative min-h-[68vh] overflow-hidden bg-[#174a70]">
           <Image
             src="/images/facilities/campus.jpg"
             alt="AIS campus"
@@ -46,11 +46,11 @@ export default function FacilitiesPage() {
             className="object-cover opacity-45"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0d2238] via-[#0d2238]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#174a70] via-[#174a70]/80 to-transparent" />
 
           <div className="relative flex min-h-[68vh] items-end px-6 py-20 md:px-12 lg:px-20 lg:py-28">
             <div className="mx-auto w-full max-w-7xl">
-              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#e8752b]">
+              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Facilities
               </p>
 
@@ -70,23 +70,23 @@ export default function FacilitiesPage() {
         <section className="px-6 py-20 md:px-12 lg:px-20 lg:py-28">
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Our Environment
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#0d2238] md:text-5xl">
+              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-5xl">
                 The environment matters.
               </h2>
             </div>
 
             <div className="max-w-3xl">
-              <p className="text-lg leading-8 text-[#68737d]">
+              <p className="text-lg leading-8 text-[#5f6367]">
                 The AIS campus and facilities will form an important part of
                 the school experience, providing spaces where students can
                 learn, collaborate, participate and grow.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-[#68737d]">
+              <p className="mt-6 text-lg leading-8 text-[#5f6367]">
                 Detailed information about individual facilities will be added
                 using approved AIS content and photography.
               </p>
@@ -99,11 +99,11 @@ export default function FacilitiesPage() {
           <div className="mx-auto max-w-7xl">
 
             <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Explore
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#0d2238] md:text-5xl">
+              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#174a70] md:text-5xl">
                 Designed around the student experience.
               </h2>
             </div>
@@ -112,7 +112,7 @@ export default function FacilitiesPage() {
               {facilities.map((facility) => (
                 <div
                   key={facility.number}
-                  className="group overflow-hidden rounded-[2rem] bg-[#0d2238]"
+                  className="group overflow-hidden rounded-[2rem] bg-[#174a70]"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
@@ -122,9 +122,9 @@ export default function FacilitiesPage() {
                       className="object-cover transition duration-700 group-hover:scale-105"
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d2238] via-transparent to-transparent opacity-90" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#174a70] via-transparent to-transparent opacity-90" />
 
-                    <span className="absolute left-7 top-7 text-sm font-semibold text-[#e8752b] md:left-9 md:top-9">
+                    <span className="absolute left-7 top-7 text-sm font-semibold text-[#f2a07a] md:left-9 md:top-9">
                       {facility.number}
                     </span>
                   </div>
@@ -138,7 +138,7 @@ export default function FacilitiesPage() {
                       {facility.description}
                     </p>
 
-                    <div className="mt-7 h-px w-10 bg-[#e8752b] transition-all duration-300 group-hover:w-20" />
+                    <div className="mt-7 h-px w-10 bg-[#f2a07a] transition-all duration-300 group-hover:w-20" />
                   </div>
                 </div>
               ))}
@@ -147,11 +147,11 @@ export default function FacilitiesPage() {
         </section>
 
         {/* FACILITY AREAS */}
-        <section className="bg-[#0d2238] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
+        <section className="bg-[#174a70] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
           <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.7fr_1.3fr]">
 
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Facility Areas
               </p>
 
@@ -167,7 +167,7 @@ export default function FacilitiesPage() {
                   className="border-t border-white/15 py-6"
                 >
                   <div className="flex items-start gap-5">
-                    <span className="text-sm font-semibold text-[#e8752b]">
+                    <span className="text-sm font-semibold text-[#f2a07a]">
                       {String(index + 1).padStart(2, "0")}
                     </span>
 
@@ -195,15 +195,15 @@ export default function FacilitiesPage() {
             </div>
 
             <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Learning Spaces
               </p>
 
-              <h2 className="mt-5 text-3xl font-semibold leading-tight tracking-tight text-[#0d2238] md:text-4xl">
+              <h2 className="mt-5 text-3xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-4xl">
                 Places that encourage students to learn and explore.
               </h2>
 
-              <p className="mt-6 leading-8 text-[#68737d]">
+              <p className="mt-6 leading-8 text-[#5f6367]">
                 Approved information about classrooms, specialist spaces,
                 resources and other learning environments will be presented
                 here as the AIS facilities information is finalized.
@@ -214,7 +214,7 @@ export default function FacilitiesPage() {
         </section>
 
         {/* CAMPUS CTA */}
-        <section className="bg-[#e8752b] px-6 py-20 md:px-12 lg:px-20">
+        <section className="bg-[#f2a07a] px-6 py-20 md:px-12 lg:px-20">
           <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
 
             <div className="max-w-2xl">
@@ -234,7 +234,7 @@ export default function FacilitiesPage() {
 
             <Link
               href="/admissions"
-              className="inline-flex w-fit items-center rounded-full bg-[#0d2238] px-7 py-4 font-semibold text-white transition hover:bg-[#081827]"
+              className="inline-flex w-fit items-center rounded-full bg-[#174a70] px-7 py-4 font-semibold text-white transition hover:bg-[#0d2f4a]"
             >
               Plan a Visit →
             </Link>

@@ -66,13 +66,13 @@ export default function AdmissionsPage() {
     <>
       <Header />
 
-      <main className="bg-[#f7f5f1] text-[#17212b]">
+      <main className="bg-[#ffffff] text-[#090909]">
 
         {/* =====================================================
             HERO
         ===================================================== */}
 
-        <section className="relative min-h-[72vh] overflow-hidden bg-[#0d2238]">
+        <section className="relative min-h-[72vh] overflow-hidden bg-[#174a70]">
 
           <Image
             src="/images/home/ais-students.jpg"
@@ -82,13 +82,13 @@ export default function AdmissionsPage() {
             className="object-cover opacity-45"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0d2238] via-[#0d2238]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#174a70] via-[#174a70]/80 to-transparent" />
 
           <div className="relative flex min-h-[72vh] items-end px-6 py-20 md:px-12 lg:px-20 lg:py-28">
 
             <div className="mx-auto w-full max-w-7xl">
 
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Admissions
               </p>
 
@@ -105,14 +105,14 @@ export default function AdmissionsPage() {
 
                 <Link
                   href="/admissions/apply"
-                  className="inline-flex items-center justify-center rounded-full bg-[#e8752b] px-7 py-4 font-bold text-white transition hover:bg-[#c95d1c]"
+                  className="inline-flex items-center justify-center rounded-full bg-[#f2a07a] px-7 py-4 font-bold text-white transition hover:bg-[#d9825b]"
                 >
                   Apply to AIS →
                 </Link>
 
                 <Link
                   href="/admissions/visit"
-                  className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/5 px-7 py-4 font-semibold text-white backdrop-blur-sm transition hover:bg-white hover:text-[#0d2238]"
+                  className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/5 px-7 py-4 font-semibold text-white backdrop-blur-sm transition hover:bg-white hover:text-[#174a70]"
                 >
                   Plan a Visit
                 </Link>
@@ -132,24 +132,24 @@ export default function AdmissionsPage() {
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.75fr_1.25fr]">
 
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Your Journey
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#0d2238] md:text-5xl">
+              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-5xl">
                 Choosing a school is a big decision.
               </h2>
             </div>
 
             <div className="max-w-3xl">
 
-              <p className="text-lg leading-8 text-[#68737d]">
+              <p className="text-lg leading-8 text-[#5f6367]">
                 The AIS admissions experience is designed to make it easier
                 for prospective families to discover the school, understand
                 the available pathways and connect with the admissions team.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-[#68737d]">
+              <p className="mt-6 text-lg leading-8 text-[#5f6367]">
                 Official admissions requirements, dates, fees, documentation
                 and application information will be added here once confirmed
                 by AIS.
@@ -169,11 +169,11 @@ export default function AdmissionsPage() {
 
             <div className="max-w-2xl">
 
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Admissions Journey
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#0d2238] md:text-5xl">
+              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#174a70] md:text-5xl">
                 Four steps to get started.
               </h2>
 
@@ -184,22 +184,22 @@ export default function AdmissionsPage() {
               {steps.map((step) => (
                 <div
                   key={step.number}
-                  className="group rounded-3xl border border-[#dfe4e8] bg-[#f7f5f1] p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  className="group rounded-3xl border border-[#e2e2e2] bg-[#ffffff] p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                 >
 
-                  <span className="text-sm font-semibold text-[#e8752b]">
+                  <span className="text-sm font-semibold text-[#f2a07a]">
                     {step.number}
                   </span>
 
-                  <h3 className="mt-12 text-2xl font-semibold text-[#0d2238]">
+                  <h3 className="mt-12 text-2xl font-semibold text-[#174a70]">
                     {step.title}
                   </h3>
 
-                  <p className="mt-4 leading-7 text-[#68737d]">
+                  <p className="mt-4 leading-7 text-[#5f6367]">
                     {step.description}
                   </p>
 
-                  <div className="mt-8 h-px w-10 bg-[#e8752b] transition-all duration-300 group-hover:w-20" />
+                  <div className="mt-8 h-px w-10 bg-[#f2a07a] transition-all duration-300 group-hover:w-20" />
 
                 </div>
               ))}
@@ -212,13 +212,13 @@ export default function AdmissionsPage() {
             EXPLORE ADMISSIONS
         ===================================================== */}
 
-        <section className="bg-[#0d2238] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
+        <section className="bg-[#174a70] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
 
           <div className="mx-auto max-w-7xl">
 
             <div className="max-w-2xl">
 
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Explore Admissions
               </p>
 
@@ -239,11 +239,11 @@ export default function AdmissionsPage() {
 
                   <div className="flex items-start justify-between">
 
-                    <span className="text-sm font-semibold text-[#e8752b]">
+                    <span className="text-sm font-semibold text-[#f2a07a]">
                       {item.number}
                     </span>
 
-                    <span className="text-xl text-white/30 transition-all group-hover:translate-x-1 group-hover:text-[#e8752b]">
+                    <span className="text-xl text-white/30 transition-all group-hover:translate-x-1 group-hover:text-[#f2a07a]">
                       ↗
                     </span>
 
@@ -287,22 +287,22 @@ export default function AdmissionsPage() {
 
               <div>
 
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                   Academic Pathways
                 </p>
 
-                <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#0d2238] md:text-5xl">
+                <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-5xl">
                   Find the right pathway for your child.
                 </h2>
 
-                <p className="mt-7 text-lg leading-8 text-[#68737d]">
+                <p className="mt-7 text-lg leading-8 text-[#5f6367]">
                   Explore the AIS academic pathways from Nursery through
                   Junior High School.
                 </p>
 
                 <Link
                   href="/academics"
-                  className="mt-8 inline-flex items-center rounded-full bg-[#0d2238] px-7 py-4 font-semibold text-white transition hover:bg-[#081827]"
+                  className="mt-8 inline-flex items-center rounded-full bg-[#174a70] px-7 py-4 font-semibold text-white transition hover:bg-[#0d2f4a]"
                 >
                   Explore Academics →
                 </Link>
@@ -323,11 +323,11 @@ export default function AdmissionsPage() {
 
             <div>
 
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Admissions Information
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#0d2238] md:text-5xl">
+              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-5xl">
                 Official information will be available here.
               </h2>
 
@@ -345,9 +345,9 @@ export default function AdmissionsPage() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="rounded-2xl bg-[#f7f5f1] px-6 py-5"
+                  className="rounded-2xl bg-[#ffffff] px-6 py-5"
                 >
-                  <span className="font-medium text-[#0d2238]">
+                  <span className="font-medium text-[#174a70]">
                     {item}
                   </span>
                 </div>
@@ -362,7 +362,7 @@ export default function AdmissionsPage() {
             CTA
         ===================================================== */}
 
-        <section className="bg-[#e8752b] px-6 py-20 md:px-12 lg:px-20">
+        <section className="bg-[#f2a07a] px-6 py-20 md:px-12 lg:px-20">
 
           <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
 
@@ -386,14 +386,14 @@ export default function AdmissionsPage() {
 
               <Link
                 href="/admissions/apply"
-                className="rounded-full bg-[#0d2238] px-7 py-4 text-center font-bold text-white transition hover:bg-[#081827]"
+                className="rounded-full bg-[#174a70] px-7 py-4 text-center font-bold text-white transition hover:bg-[#0d2f4a]"
               >
                 Apply to AIS →
               </Link>
 
               <Link
                 href="/contact"
-                className="rounded-full border border-white/40 px-7 py-4 text-center font-semibold text-white transition hover:bg-white hover:text-[#e8752b]"
+                className="rounded-full border border-white/40 px-7 py-4 text-center font-semibold text-white transition hover:bg-white hover:text-[#f2a07a]"
               >
                 Make an Enquiry
               </Link>

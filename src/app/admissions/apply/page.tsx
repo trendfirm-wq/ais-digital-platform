@@ -73,24 +73,24 @@ export default function ApplyPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#f7f5f1] text-[#17212b]">
+    <main className="min-h-screen bg-[#ffffff] text-[#090909]">
 
       {/* =====================================================
           HEADER
       ===================================================== */}
 
-      <section className="bg-[#0d2238] px-6 pb-16 pt-32 text-white md:px-12 lg:px-20">
+      <section className="bg-[#174a70] px-6 pb-16 pt-32 text-white md:px-12 lg:px-20">
 
         <div className="mx-auto max-w-5xl">
 
           <Link
             href="/admissions"
-            className="text-sm font-semibold text-white/60 transition hover:text-[#e8752b]"
+            className="text-sm font-semibold text-white/60 transition hover:text-[#f2a07a]"
           >
             ← Admissions
           </Link>
 
-          <p className="mt-10 text-sm font-semibold uppercase tracking-[0.25em] text-[#e8752b]">
+          <p className="mt-10 text-sm font-semibold uppercase tracking-[0.25em] text-[#f2a07a]">
             Admissions
           </p>
 
@@ -110,7 +110,7 @@ export default function ApplyPage() {
           PROGRESS
       ===================================================== */}
 
-      <section className="border-b border-[#dfe4e8] bg-white px-6 py-6 md:px-12 lg:px-20">
+      <section className="border-b border-[#e2e2e2] bg-white px-6 py-6 md:px-12 lg:px-20">
 
         <div className="mx-auto max-w-5xl">
 
@@ -131,8 +131,8 @@ export default function ApplyPage() {
                       transition-all duration-300
                       ${
                         index <= currentStep
-                          ? "bg-[#e8752b] text-white"
-                          : "bg-[#eef1f3] text-[#68737d]"
+                          ? "bg-[#f2a07a] text-white"
+                          : "bg-[#f5f5f5] text-[#5f6367]"
                       }
                     `}
                   >
@@ -144,8 +144,8 @@ export default function ApplyPage() {
                       mt-2 hidden text-xs font-semibold sm:block
                       ${
                         index === currentStep
-                          ? "text-[#0d2238]"
-                          : "text-[#68737d]"
+                          ? "text-[#174a70]"
+                          : "text-[#5f6367]"
                       }
                     `}
                   >
@@ -160,8 +160,8 @@ export default function ApplyPage() {
                       mx-2 h-px flex-1 transition-colors duration-300
                       ${
                         index < currentStep
-                          ? "bg-[#e8752b]"
-                          : "bg-[#dfe4e8]"
+                          ? "bg-[#f2a07a]"
+                          : "bg-[#e2e2e2]"
                       }
                     `}
                   />
@@ -185,7 +185,7 @@ export default function ApplyPage() {
 
           <form
             onSubmit={handleSubmit}
-            className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-[#dfe4e8] md:p-10 lg:p-14"
+            className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-[#e2e2e2] md:p-10 lg:p-14"
           >
 
             {/* =================================================
@@ -397,7 +397,7 @@ export default function ApplyPage() {
                     }
                   />
 
-                  <div className="rounded-2xl bg-[#fff1e8] p-5 text-sm leading-6 text-[#68737d]">
+                  <div className="rounded-2xl bg-[#fff1eb] p-5 text-sm leading-6 text-[#5f6367]">
                     File requirements and permitted formats will be
                     finalized when the official AIS admissions
                     process is connected to the website.
@@ -460,7 +460,7 @@ export default function ApplyPage() {
 
                 </div>
 
-                <div className="mt-8 rounded-2xl border border-[#dfe4e8] p-5 text-sm leading-6 text-[#68737d]">
+                <div className="mt-8 rounded-2xl border border-[#e2e2e2] p-5 text-sm leading-6 text-[#5f6367]">
                   By submitting this application, you confirm that the
                   information provided is accurate to the best of your
                   knowledge.
@@ -473,20 +473,20 @@ export default function ApplyPage() {
                 BUTTONS
             ================================================= */}
 
-            <div className="mt-12 flex flex-col-reverse gap-3 border-t border-[#dfe4e8] pt-8 sm:flex-row sm:items-center sm:justify-between">
+            <div className="mt-12 flex flex-col-reverse gap-3 border-t border-[#e2e2e2] pt-8 sm:flex-row sm:items-center sm:justify-between">
 
               {currentStep > 0 ? (
                 <button
                   type="button"
                   onClick={previousStep}
-                  className="rounded-full border border-[#dfe4e8] px-7 py-4 font-semibold text-[#0d2238] transition hover:border-[#0d2238]"
+                  className="rounded-full border border-[#e2e2e2] px-7 py-4 font-semibold text-[#174a70] transition hover:border-[#174a70]"
                 >
                   ← Previous
                 </button>
               ) : (
                 <Link
                   href="/admissions"
-                  className="rounded-full border border-[#dfe4e8] px-7 py-4 text-center font-semibold text-[#0d2238]"
+                  className="rounded-full border border-[#e2e2e2] px-7 py-4 text-center font-semibold text-[#174a70]"
                 >
                   Cancel
                 </Link>
@@ -496,14 +496,14 @@ export default function ApplyPage() {
                 <button
                   type="button"
                   onClick={nextStep}
-                  className="rounded-full bg-[#e8752b] px-7 py-4 font-bold text-white transition hover:bg-[#c95d1c]"
+                  className="rounded-full bg-[#f2a07a] px-7 py-4 font-bold text-white transition hover:bg-[#d9825b]"
                 >
                   Continue →
                 </button>
               ) : (
                 <button
                   type="submit"
-                  className="rounded-full bg-[#0d2238] px-8 py-4 font-bold text-white transition hover:bg-[#081827]"
+                  className="rounded-full bg-[#174a70] px-8 py-4 font-bold text-white transition hover:bg-[#0d2f4a]"
                 >
                   Submit Application →
                 </button>
@@ -520,12 +520,12 @@ export default function ApplyPage() {
           HELP
       ===================================================== */}
 
-      <section className="bg-[#0d2238] px-6 py-16 text-white md:px-12 lg:px-20">
+      <section className="bg-[#174a70] px-6 py-16 text-white md:px-12 lg:px-20">
 
         <div className="mx-auto flex max-w-5xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
               Need help?
             </p>
 
@@ -536,7 +536,7 @@ export default function ApplyPage() {
 
           <Link
             href="/contact"
-            className="w-fit rounded-full border border-white/20 px-6 py-3 font-semibold transition hover:bg-white hover:text-[#0d2238]"
+            className="w-fit rounded-full border border-white/20 px-6 py-3 font-semibold transition hover:bg-white hover:text-[#174a70]"
           >
             Contact AIS →
           </Link>
@@ -565,15 +565,15 @@ function FormHeading({
 }) {
   return (
     <div>
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
         {eyebrow}
       </p>
 
-      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#0d2238] md:text-4xl">
+      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#174a70] md:text-4xl">
         {title}
       </h2>
 
-      <p className="mt-4 max-w-2xl leading-7 text-[#68737d]">
+      <p className="mt-4 max-w-2xl leading-7 text-[#5f6367]">
         {description}
       </p>
     </div>
@@ -596,10 +596,10 @@ function Input({
 }) {
   return (
     <label className="block">
-      <span className="mb-2 block text-sm font-semibold text-[#0d2238]">
+      <span className="mb-2 block text-sm font-semibold text-[#174a70]">
         {label}
         {required && (
-          <span className="ml-1 text-[#e8752b]">*</span>
+          <span className="ml-1 text-[#f2a07a]">*</span>
         )}
       </span>
 
@@ -610,15 +610,15 @@ function Input({
         onChange={(event) => onChange(event.target.value)}
         className="
           w-full rounded-2xl
-          border border-[#dfe4e8]
-          bg-[#f7f5f1]
+          border border-[#e2e2e2]
+          bg-[#ffffff]
           px-5 py-4
-          text-[#17212b]
+          text-[#090909]
           outline-none
           transition
-          focus:border-[#e8752b]
+          focus:border-[#f2a07a]
           focus:ring-2
-          focus:ring-[#e8752b]/10
+          focus:ring-[#f2a07a]/10
         "
       />
     </label>
@@ -641,10 +641,10 @@ function Select({
 }) {
   return (
     <label className="block">
-      <span className="mb-2 block text-sm font-semibold text-[#0d2238]">
+      <span className="mb-2 block text-sm font-semibold text-[#174a70]">
         {label}
         {required && (
-          <span className="ml-1 text-[#e8752b]">*</span>
+          <span className="ml-1 text-[#f2a07a]">*</span>
         )}
       </span>
 
@@ -654,15 +654,15 @@ function Select({
         onChange={(event) => onChange(event.target.value)}
         className="
           w-full rounded-2xl
-          border border-[#dfe4e8]
-          bg-[#f7f5f1]
+          border border-[#e2e2e2]
+          bg-[#ffffff]
           px-5 py-4
-          text-[#17212b]
+          text-[#090909]
           outline-none
           transition
-          focus:border-[#e8752b]
+          focus:border-[#f2a07a]
           focus:ring-2
-          focus:ring-[#e8752b]/10
+          focus:ring-[#f2a07a]/10
         "
       >
         {options.map((option) => (
@@ -690,7 +690,7 @@ function TextArea({
 }) {
   return (
     <label className="block">
-      <span className="mb-2 block text-sm font-semibold text-[#0d2238]">
+      <span className="mb-2 block text-sm font-semibold text-[#174a70]">
         {label}
       </span>
 
@@ -700,15 +700,15 @@ function TextArea({
         rows={5}
         className="
           w-full resize-none rounded-2xl
-          border border-[#dfe4e8]
-          bg-[#f7f5f1]
+          border border-[#e2e2e2]
+          bg-[#ffffff]
           px-5 py-4
-          text-[#17212b]
+          text-[#090909]
           outline-none
           transition
-          focus:border-[#e8752b]
+          focus:border-[#f2a07a]
           focus:ring-2
-          focus:ring-[#e8752b]/10
+          focus:ring-[#f2a07a]/10
         "
       />
     </label>
@@ -728,11 +728,11 @@ function FileUpload({
   return (
     <label className="block cursor-pointer">
 
-      <span className="mb-2 block text-sm font-semibold text-[#0d2238]">
+      <span className="mb-2 block text-sm font-semibold text-[#174a70]">
         {label}
       </span>
 
-      <div className="rounded-2xl border-2 border-dashed border-[#dfe4e8] bg-[#f7f5f1] p-6 transition hover:border-[#e8752b]">
+      <div className="rounded-2xl border-2 border-dashed border-[#e2e2e2] bg-[#ffffff] p-6 transition hover:border-[#f2a07a]">
 
         <input
           type="file"
@@ -745,16 +745,16 @@ function FileUpload({
         <div className="flex items-center justify-between gap-4">
 
           <div>
-            <p className="font-semibold text-[#0d2238]">
+            <p className="font-semibold text-[#174a70]">
               {file ? file.name : "Choose a file"}
             </p>
 
-            <p className="mt-1 text-sm text-[#68737d]">
+            <p className="mt-1 text-sm text-[#5f6367]">
               Click to browse your device
             </p>
           </div>
 
-          <span className="text-xl text-[#e8752b]">
+          <span className="text-xl text-[#f2a07a]">
             ↑
           </span>
 
@@ -774,13 +774,13 @@ function ReviewItem({
   value: string;
 }) {
   return (
-    <div className="flex flex-col gap-1 rounded-2xl bg-[#f7f5f1] px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+    <div className="flex flex-col gap-1 rounded-2xl bg-[#ffffff] px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
 
-      <span className="text-sm text-[#68737d]">
+      <span className="text-sm text-[#5f6367]">
         {label}
       </span>
 
-      <span className="font-semibold text-[#0d2238]">
+      <span className="font-semibold text-[#174a70]">
         {value || "Not provided"}
       </span>
 

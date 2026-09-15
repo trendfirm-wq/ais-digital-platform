@@ -61,23 +61,23 @@ export default function AdmissionsFAQsPage() {
     <>
       <Header />
 
-      <main className="bg-[#f7f5f1] text-[#17212b]">
+      <main className="bg-[#ffffff] text-[#090909]">
 
         {/* HERO */}
-        <section className="bg-[#0d2238] px-6 pb-20 pt-36 text-white md:px-12 lg:px-20 lg:pb-28">
+        <section className="bg-[#174a70] px-6 pb-20 pt-36 text-white md:px-12 lg:px-20 lg:pb-28">
 
           <div className="mx-auto max-w-7xl">
 
             <Link
               href="/admissions"
-              className="text-sm font-semibold text-white/60 transition hover:text-[#e8752b]"
+              className="text-sm font-semibold text-white/60 transition hover:text-[#f2a07a]"
             >
               ← Admissions
             </Link>
 
             <div className="mt-12 max-w-4xl">
 
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Admissions FAQs
               </p>
 
@@ -103,22 +103,22 @@ export default function AdmissionsFAQsPage() {
             {/* LEFT */}
             <div className="lg:sticky lg:top-10 lg:self-start">
 
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Need Help?
               </p>
 
-              <h2 className="mt-5 text-3xl font-semibold leading-tight tracking-tight text-[#0d2238] md:text-4xl">
+              <h2 className="mt-5 text-3xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-4xl">
                 Everything starts with a question.
               </h2>
 
-              <p className="mt-5 leading-7 text-[#68737d]">
+              <p className="mt-5 leading-7 text-[#5f6367]">
                 If you cannot find the information you are looking for,
                 contact AIS directly.
               </p>
 
               <Link
                 href="/contact"
-                className="mt-8 inline-flex rounded-full bg-[#0d2238] px-6 py-3 font-semibold text-white transition hover:bg-[#081827]"
+                className="mt-8 inline-flex rounded-full bg-[#174a70] px-6 py-3 font-semibold text-white transition hover:bg-[#0d2f4a]"
               >
                 Contact AIS →
               </Link>
@@ -126,7 +126,7 @@ export default function AdmissionsFAQsPage() {
             </div>
 
             {/* RIGHT */}
-            <div className="border-t border-[#dfe4e8]">
+            <div className="border-t border-[#e2e2e2]">
 
               {faqs.map((faq, index) => {
                 const isOpen = openIndex === index;
@@ -134,7 +134,7 @@ export default function AdmissionsFAQsPage() {
                 return (
                   <div
                     key={faq.question}
-                    className="border-b border-[#dfe4e8]"
+                    className="border-b border-[#e2e2e2]"
                   >
 
                     <button
@@ -146,11 +146,11 @@ export default function AdmissionsFAQsPage() {
 
                       <div className="flex items-start gap-5">
 
-                        <span className="pt-1 text-xs font-bold text-[#e8752b]">
+                        <span className="pt-1 text-xs font-bold text-[#f2a07a]">
                           {String(index + 1).padStart(2, "0")}
                         </span>
 
-                        <span className="text-xl font-semibold text-[#0d2238] md:text-2xl">
+                        <span className="text-xl font-semibold text-[#174a70] md:text-2xl">
                           {faq.question}
                         </span>
 
@@ -160,14 +160,14 @@ export default function AdmissionsFAQsPage() {
                         className={`
                           flex h-10 w-10 shrink-0 items-center justify-center
                           rounded-full
-                          border border-[#dfe4e8]
+                          border border-[#e2e2e2]
                           text-xl
-                          text-[#0d2238]
+                          text-[#174a70]
                           transition-all duration-300
                           ${
                             isOpen
-                              ? "rotate-45 bg-[#e8752b] text-white"
-                              : "group-hover:border-[#e8752b]"
+                              ? "rotate-45 bg-[#f2a07a] text-white"
+                              : "group-hover:border-[#f2a07a]"
                           }
                         `}
                       >
@@ -188,7 +188,7 @@ export default function AdmissionsFAQsPage() {
                     >
                       <div className="overflow-hidden pl-10 md:pl-12">
 
-                        <p className="max-w-2xl leading-8 text-[#68737d]">
+                        <p className="max-w-2xl leading-8 text-[#5f6367]">
                           {faq.answer}
                         </p>
 
@@ -211,11 +211,11 @@ export default function AdmissionsFAQsPage() {
 
             <div className="max-w-2xl">
 
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Admissions
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#0d2238] md:text-5xl">
+              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#174a70] md:text-5xl">
                 Ready to take the next step?
               </h2>
 
@@ -225,9 +225,9 @@ export default function AdmissionsFAQsPage() {
 
               <Link
                 href="/admissions/apply"
-                className="group rounded-3xl bg-[#0d2238] p-7 text-white transition hover:-translate-y-1"
+                className="group rounded-3xl bg-[#174a70] p-7 text-white transition hover:-translate-y-1"
               >
-                <span className="text-sm font-semibold text-[#e8752b]">
+                <span className="text-sm font-semibold text-[#f2a07a]">
                   01
                 </span>
 
@@ -239,49 +239,49 @@ export default function AdmissionsFAQsPage() {
                   Begin the application journey.
                 </p>
 
-                <span className="mt-8 block text-[#e8752b]">
+                <span className="mt-8 block text-[#f2a07a]">
                   Start Application →
                 </span>
               </Link>
 
               <Link
                 href="/admissions/visit"
-                className="group rounded-3xl border border-[#dfe4e8] bg-[#f7f5f1] p-7 transition hover:-translate-y-1 hover:border-[#e8752b]"
+                className="group rounded-3xl border border-[#e2e2e2] bg-[#ffffff] p-7 transition hover:-translate-y-1 hover:border-[#f2a07a]"
               >
-                <span className="text-sm font-semibold text-[#e8752b]">
+                <span className="text-sm font-semibold text-[#f2a07a]">
                   02
                 </span>
 
-                <h3 className="mt-10 text-2xl font-semibold text-[#0d2238]">
+                <h3 className="mt-10 text-2xl font-semibold text-[#174a70]">
                   Visit AIS
                 </h3>
 
-                <p className="mt-3 text-[#68737d]">
+                <p className="mt-3 text-[#5f6367]">
                   Request a campus visit.
                 </p>
 
-                <span className="mt-8 block font-semibold text-[#0d2238]">
+                <span className="mt-8 block font-semibold text-[#174a70]">
                   Plan a Visit →
                 </span>
               </Link>
 
               <Link
                 href="/contact"
-                className="group rounded-3xl border border-[#dfe4e8] bg-[#f7f5f1] p-7 transition hover:-translate-y-1 hover:border-[#e8752b]"
+                className="group rounded-3xl border border-[#e2e2e2] bg-[#ffffff] p-7 transition hover:-translate-y-1 hover:border-[#f2a07a]"
               >
-                <span className="text-sm font-semibold text-[#e8752b]">
+                <span className="text-sm font-semibold text-[#f2a07a]">
                   03
                 </span>
 
-                <h3 className="mt-10 text-2xl font-semibold text-[#0d2238]">
+                <h3 className="mt-10 text-2xl font-semibold text-[#174a70]">
                   Contact AIS
                 </h3>
 
-                <p className="mt-3 text-[#68737d]">
+                <p className="mt-3 text-[#5f6367]">
                   Have another question?
                 </p>
 
-                <span className="mt-8 block font-semibold text-[#0d2238]">
+                <span className="mt-8 block font-semibold text-[#174a70]">
                   Send an Enquiry →
                 </span>
               </Link>
@@ -292,7 +292,7 @@ export default function AdmissionsFAQsPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-[#e8752b] px-6 py-20 md:px-12 lg:px-20">
+        <section className="bg-[#f2a07a] px-6 py-20 md:px-12 lg:px-20">
 
           <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
 
@@ -315,7 +315,7 @@ export default function AdmissionsFAQsPage() {
 
             <Link
               href="/contact"
-              className="inline-flex w-fit rounded-full bg-[#0d2238] px-7 py-4 font-bold text-white transition hover:bg-[#081827]"
+              className="inline-flex w-fit rounded-full bg-[#174a70] px-7 py-4 font-bold text-white transition hover:bg-[#0d2f4a]"
             >
               Make an Enquiry →
             </Link>

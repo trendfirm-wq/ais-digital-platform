@@ -27,10 +27,10 @@ export default function ProgrammePage({
 }: ProgrammePageProps) {
   return (
     <>
-      <section className="relative flex min-h-[68vh] items-end overflow-hidden bg-[#0d2238]">
+      <section className="relative flex min-h-[68vh] items-end overflow-hidden bg-[#174a70]">
         <div
           aria-hidden="true"
-          className="absolute right-[-10%] top-[-20%] h-[650px] w-[650px] rounded-full border-[100px] border-[#e8752b]/10"
+          className="absolute right-[-10%] top-[-20%] h-[650px] w-[650px] rounded-full border-[100px] border-[#f2a07a]/10"
         />
 
         <div
@@ -47,7 +47,7 @@ export default function ProgrammePage({
           </Link>
 
           <div className="max-w-5xl">
-            <span className="mb-6 block text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+            <span className="mb-6 block text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
               {programme.level}
             </span>
 
@@ -71,17 +71,17 @@ export default function ProgrammePage({
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
             <div>
-              <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+              <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Programme Overview
               </span>
 
-              <h2 className="mt-5 text-4xl font-bold leading-tight text-[#0d2238] md:text-5xl">
+              <h2 className="mt-5 text-4xl font-bold leading-tight text-[#174a70] md:text-5xl">
                 Supporting every stage of the journey.
               </h2>
             </div>
 
             <div>
-              <p className="text-lg leading-8 text-[#68737d]">
+              <p className="text-lg leading-8 text-[#5f6367]">
                 {programme.description}
               </p>
             </div>
@@ -90,11 +90,11 @@ export default function ProgrammePage({
       </section>
 
       {/* QUICK FACTS */}
-      <section className="bg-[#f7f5f1] py-20 md:py-24">
+      <section className="bg-[#ffffff] py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-4 md:grid-cols-2">
-            <div className="bg-[#0d2238] p-8 md:p-10">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+            <div className="bg-[#174a70] p-8 md:p-10">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Age / Stage
               </span>
 
@@ -107,8 +107,8 @@ export default function ProgrammePage({
               </p>
             </div>
 
-            <div className="bg-[#081827] p-8 md:p-10">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+            <div className="bg-[#0d2f4a] p-8 md:p-10">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Focus
               </span>
 
@@ -129,11 +129,11 @@ export default function ProgrammePage({
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-14">
-            <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+            <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
               Learning Focus
             </span>
 
-            <h2 className="mt-5 max-w-3xl text-4xl font-bold leading-tight text-[#0d2238] md:text-6xl">
+            <h2 className="mt-5 max-w-3xl text-4xl font-bold leading-tight text-[#174a70] md:text-6xl">
               Developing knowledge, skills and confidence.
             </h2>
           </div>
@@ -142,17 +142,17 @@ export default function ProgrammePage({
             {programme.focus.map((item, index) => (
               <div
                 key={item}
-                className="min-h-[230px] border border-[#dfe4e8] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#e8752b]"
+                className="min-h-[230px] border border-[#e2e2e2] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#f2a07a]"
               >
-                <span className="text-sm font-bold tracking-[0.2em] text-[#e8752b]">
+                <span className="text-sm font-bold tracking-[0.2em] text-[#f2a07a]">
                   0{index + 1}
                 </span>
 
-                <h3 className="mt-16 text-xl font-bold text-[#0d2238]">
+                <h3 className="mt-16 text-xl font-bold text-[#174a70]">
                   {item}
                 </h3>
 
-                <p className="mt-3 text-sm leading-6 text-[#68737d]">
+                <p className="mt-3 text-sm leading-6 text-[#5f6367]">
                   Approved programme information will be added here.
                 </p>
               </div>
@@ -162,11 +162,11 @@ export default function ProgrammePage({
       </section>
 
       {/* CURRICULUM PLACEHOLDER */}
-      <section className="bg-[#0d2238] py-24 text-white md:py-32">
+      <section className="bg-[#174a70] py-24 text-white md:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
-              <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+              <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Curriculum
               </span>
 
@@ -182,7 +182,7 @@ export default function ProgrammePage({
 
               <Link
                 href="/academics/curriculum"
-                className="group mt-9 inline-flex items-center gap-4 rounded-full bg-[#e8752b] px-7 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#0d2238]"
+                className="group mt-9 inline-flex items-center gap-4 rounded-full bg-[#f2a07a] px-7 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#174a70]"
               >
                 View Curriculum
 
@@ -192,10 +192,10 @@ export default function ProgrammePage({
               </Link>
             </div>
 
-            <div className="relative min-h-[420px] overflow-hidden bg-[#081827] p-8 md:p-12">
+            <div className="relative min-h-[420px] overflow-hidden bg-[#0d2f4a] p-8 md:p-12">
               <div
                 aria-hidden="true"
-                className="absolute -right-24 -top-24 h-72 w-72 rounded-full border-[45px] border-[#e8752b]/15"
+                className="absolute -right-24 -top-24 h-72 w-72 rounded-full border-[45px] border-[#f2a07a]/15"
               />
 
               <div className="relative flex h-full flex-col justify-end">
@@ -213,19 +213,19 @@ export default function ProgrammePage({
       </section>
 
       {/* NAVIGATION */}
-      <section className="bg-[#f7f5f1]">
-        <div className="mx-auto grid max-w-7xl border-x border-[#dfe4e8] md:grid-cols-2">
+      <section className="bg-[#ffffff]">
+        <div className="mx-auto grid max-w-7xl border-x border-[#e2e2e2] md:grid-cols-2">
           {programme.previous ? (
             <Link
               href={programme.previous.href}
-              className="group border-b border-[#dfe4e8] p-8 transition-colors hover:bg-white md:border-b-0 md:border-r md:p-12"
+              className="group border-b border-[#e2e2e2] p-8 transition-colors hover:bg-white md:border-b-0 md:border-r md:p-12"
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Previous
               </span>
 
               <div className="mt-4 flex items-center justify-between gap-5">
-                <span className="text-xl font-bold text-[#0d2238]">
+                <span className="text-xl font-bold text-[#174a70]">
                   {programme.previous.label}
                 </span>
 
@@ -243,12 +243,12 @@ export default function ProgrammePage({
               href={programme.next.href}
               className="group p-8 text-right transition-colors hover:bg-white md:p-12"
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Next
               </span>
 
               <div className="mt-4 flex items-center justify-end gap-5">
-                <span className="text-xl font-bold text-[#0d2238]">
+                <span className="text-xl font-bold text-[#174a70]">
                   {programme.next.label}
                 </span>
 
@@ -262,7 +262,7 @@ export default function ProgrammePage({
       </section>
 
       {/* CTA */}
-      <section className="bg-[#e8752b]">
+      <section className="bg-[#f2a07a]">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-24">
           <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
             <div>
@@ -277,7 +277,7 @@ export default function ProgrammePage({
 
             <Link
               href="/admissions"
-              className="group inline-flex shrink-0 items-center justify-center gap-4 rounded-full bg-[#081827] px-8 py-5 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#081827]"
+              className="group inline-flex shrink-0 items-center justify-center gap-4 rounded-full bg-[#0d2f4a] px-8 py-5 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#0d2f4a]"
             >
               Explore Admissions
 

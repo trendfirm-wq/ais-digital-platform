@@ -25,20 +25,20 @@ export default function ContactPage() {
     <>
       <Header />
 
-      <main className="bg-[#f7f5f1] text-[#17212b]">
+      <main className="bg-[#ffffff] text-[#090909]">
 
         {/* =====================================================
             HERO
         ===================================================== */}
-        <section className="relative overflow-hidden bg-[#0d2238] text-white">
+        <section className="relative overflow-hidden bg-[#174a70] text-white">
           <div className="absolute inset-0">
-            <div className="absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-[#e8752b]/10 blur-3xl" />
+            <div className="absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-[#f2a07a]/10 blur-3xl" />
             <div className="absolute -bottom-40 left-1/3 h-[450px] w-[450px] rounded-full bg-white/[0.03] blur-3xl" />
           </div>
 
           <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-8 lg:pb-32 lg:pt-40">
             <div className="max-w-4xl">
-              <p className="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-[#e8752b]">
+              <p className="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-[#f2a07a]">
                 Contact AIS
               </p>
 
@@ -56,7 +56,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-[#e8752b] via-[#e8752b]/50 to-transparent" />
+          <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-[#f2a07a] via-[#f2a07a]/50 to-transparent" />
         </section>
 
         {/* =====================================================
@@ -65,7 +65,7 @@ export default function ContactPage() {
         <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+              <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Start a conversation
               </p>
 
@@ -75,7 +75,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <p className="text-lg leading-8 text-[#68737d]">
+              <p className="text-lg leading-8 text-[#5f6367]">
                 Use the form below to send an enquiry to T.I. Ahmadiyya
                 International School. Select the area that best describes
                 your enquiry so that your message can be directed appropriately.
@@ -84,14 +84,14 @@ export default function ContactPage() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href="/admissions"
-                  className="rounded-full border border-[#0d2238]/15 px-5 py-3 text-sm font-semibold transition hover:border-[#e8752b] hover:text-[#e8752b]"
+                  className="rounded-full border border-[#174a70]/15 px-5 py-3 text-sm font-semibold transition hover:border-[#f2a07a] hover:text-[#f2a07a]"
                 >
                   Explore Admissions
                 </Link>
 
                 <Link
                   href="/admissions/visit"
-                  className="rounded-full border border-[#0d2238]/15 px-5 py-3 text-sm font-semibold transition hover:border-[#e8752b] hover:text-[#e8752b]"
+                  className="rounded-full border border-[#174a70]/15 px-5 py-3 text-sm font-semibold transition hover:border-[#f2a07a] hover:text-[#f2a07a]"
                 >
                   Plan a Visit
                 </Link>
@@ -103,7 +103,7 @@ export default function ContactPage() {
         {/* =====================================================
             FORM + CONTACT
         ===================================================== */}
-        <section className="border-y border-[#dfe4e8] bg-white">
+        <section className="border-y border-[#e2e2e2] bg-white">
           <div className="mx-auto grid max-w-7xl lg:grid-cols-[1.35fr_0.65fr]">
 
             {/* FORM */}
@@ -111,7 +111,7 @@ export default function ContactPage() {
               {!submitted ? (
                 <>
                   <div className="mb-12">
-                    <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#e8752b]">
+                    <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#f2a07a]">
                       Send an enquiry
                     </p>
 
@@ -135,7 +135,7 @@ export default function ContactPage() {
                         id="enquiryType"
                         name="enquiryType"
                         required
-                        className="w-full appearance-none rounded-none border-0 border-b border-[#dfe4e8] bg-transparent px-0 py-4 text-base outline-none transition focus:border-[#e8752b]"
+                        className="w-full appearance-none rounded-none border-0 border-b border-[#e2e2e2] bg-transparent px-0 py-4 text-base outline-none transition focus:border-[#f2a07a]"
                       >
                         <option value="">Select an enquiry type</option>
 
@@ -163,7 +163,7 @@ export default function ContactPage() {
                           type="text"
                           required
                           placeholder="Your full name"
-                          className="w-full border-0 border-b border-[#dfe4e8] bg-transparent px-0 py-4 text-base outline-none placeholder:text-[#68737d]/50 focus:border-[#e8752b]"
+                          className="w-full border-0 border-b border-[#e2e2e2] bg-transparent px-0 py-4 text-base outline-none placeholder:text-[#5f6367]/50 focus:border-[#f2a07a]"
                         />
                       </div>
 
@@ -180,7 +180,7 @@ export default function ContactPage() {
                           name="phone"
                           type="tel"
                           placeholder="Your phone number"
-                          className="w-full border-0 border-b border-[#dfe4e8] bg-transparent px-0 py-4 text-base outline-none placeholder:text-[#68737d]/50 focus:border-[#e8752b]"
+                          className="w-full border-0 border-b border-[#e2e2e2] bg-transparent px-0 py-4 text-base outline-none placeholder:text-[#5f6367]/50 focus:border-[#f2a07a]"
                         />
                       </div>
                     </div>
@@ -200,7 +200,7 @@ export default function ContactPage() {
                         type="email"
                         required
                         placeholder="you@example.com"
-                        className="w-full border-0 border-b border-[#dfe4e8] bg-transparent px-0 py-4 text-base outline-none placeholder:text-[#68737d]/50 focus:border-[#e8752b]"
+                        className="w-full border-0 border-b border-[#e2e2e2] bg-transparent px-0 py-4 text-base outline-none placeholder:text-[#5f6367]/50 focus:border-[#f2a07a]"
                       />
                     </div>
 
@@ -219,14 +219,14 @@ export default function ContactPage() {
                         required
                         rows={6}
                         placeholder="Tell us how we can help..."
-                        className="w-full resize-none border-0 border-b border-[#dfe4e8] bg-transparent px-0 py-4 text-base outline-none placeholder:text-[#68737d]/50 focus:border-[#e8752b]"
+                        className="w-full resize-none border-0 border-b border-[#e2e2e2] bg-transparent px-0 py-4 text-base outline-none placeholder:text-[#5f6367]/50 focus:border-[#f2a07a]"
                       />
                     </div>
 
                     {/* Submit */}
                     <button
                       type="submit"
-                      className="group inline-flex items-center gap-5 rounded-full bg-[#e8752b] px-8 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-[#0d2238]"
+                      className="group inline-flex items-center gap-5 rounded-full bg-[#f2a07a] px-8 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-[#174a70]"
                     >
                       Send enquiry
 
@@ -235,7 +235,7 @@ export default function ContactPage() {
                       </span>
                     </button>
 
-                    <p className="max-w-xl text-xs leading-5 text-[#68737d]">
+                    <p className="max-w-xl text-xs leading-5 text-[#5f6367]">
                       Please avoid including sensitive personal information
                       that is not necessary for your enquiry.
                     </p>
@@ -244,11 +244,11 @@ export default function ContactPage() {
               ) : (
                 /* SUCCESS */
                 <div className="flex min-h-[560px] flex-col justify-center">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#e8752b] text-2xl text-white">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#f2a07a] text-2xl text-white">
                     ✓
                   </div>
 
-                  <p className="mt-8 text-xs font-bold uppercase tracking-[0.22em] text-[#e8752b]">
+                  <p className="mt-8 text-xs font-bold uppercase tracking-[0.22em] text-[#f2a07a]">
                     Message received
                   </p>
 
@@ -256,7 +256,7 @@ export default function ContactPage() {
                     Thank you for getting in touch.
                   </h2>
 
-                  <p className="mt-6 max-w-xl text-lg leading-8 text-[#68737d]">
+                  <p className="mt-6 max-w-xl text-lg leading-8 text-[#5f6367]">
                     Your enquiry has been received. A member of the AIS team
                     can follow up with you using the contact information you
                     provided.
@@ -265,14 +265,14 @@ export default function ContactPage() {
                   <div className="mt-10 flex flex-wrap gap-4">
                     <Link
                       href="/"
-                      className="rounded-full bg-[#0d2238] px-7 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-[#e8752b]"
+                      className="rounded-full bg-[#174a70] px-7 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-[#f2a07a]"
                     >
                       Back to home
                     </Link>
 
                     <button
                       onClick={() => setSubmitted(false)}
-                      className="rounded-full border border-[#0d2238]/15 px-7 py-4 text-sm font-bold uppercase tracking-[0.12em] transition hover:border-[#e8752b] hover:text-[#e8752b]"
+                      className="rounded-full border border-[#174a70]/15 px-7 py-4 text-sm font-bold uppercase tracking-[0.12em] transition hover:border-[#f2a07a] hover:text-[#f2a07a]"
                     >
                       Send another enquiry
                     </button>
@@ -282,8 +282,8 @@ export default function ContactPage() {
             </div>
 
             {/* CONTACT PANEL */}
-            <aside className="bg-[#0d2238] px-6 py-16 text-white lg:px-10 lg:py-24">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#e8752b]">
+            <aside className="bg-[#174a70] px-6 py-16 text-white lg:px-10 lg:py-24">
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#f2a07a]">
                 Contact information
               </p>
 
@@ -338,7 +338,7 @@ export default function ContactPage() {
 
                 <Link
                   href="/admissions"
-                  className="mt-4 inline-flex items-center gap-3 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:text-[#e8752b]"
+                  className="mt-4 inline-flex items-center gap-3 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:text-[#f2a07a]"
                 >
                   Visit Admissions
                   <span>→</span>
@@ -351,9 +351,9 @@ export default function ContactPage() {
         {/* =====================================================
             VISIT STRIP
         ===================================================== */}
-        <section className="bg-[#f7f5f1]">
+        <section className="bg-[#ffffff]">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
-            <div className="relative overflow-hidden rounded-[2rem] bg-[#e8752b] px-7 py-14 text-white md:px-12 lg:px-16 lg:py-16">
+            <div className="relative overflow-hidden rounded-[2rem] bg-[#f2a07a] px-7 py-14 text-white md:px-12 lg:px-16 lg:py-16">
 
               <div className="absolute -right-24 -top-24 h-64 w-64 rounded-full border-[40px] border-white/10" />
 
@@ -371,7 +371,7 @@ export default function ContactPage() {
 
                 <Link
                   href="/admissions/visit"
-                  className="group inline-flex w-fit items-center gap-5 rounded-full bg-white px-7 py-4 text-sm font-bold uppercase tracking-[0.14em] text-[#0d2238] transition hover:bg-[#0d2238] hover:text-white"
+                  className="group inline-flex w-fit items-center gap-5 rounded-full bg-white px-7 py-4 text-sm font-bold uppercase tracking-[0.14em] text-[#174a70] transition hover:bg-[#174a70] hover:text-white"
                 >
                   Request a visit
                   <span className="transition-transform group-hover:translate-x-1">

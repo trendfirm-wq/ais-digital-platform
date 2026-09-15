@@ -56,14 +56,14 @@ export default function NewsEventsPage() {
     <>
       <Header />
 
-      <main className="bg-[#f7f5f1] text-[#17212b]">
+      <main className="bg-[#ffffff] text-[#090909]">
 
         {/* HERO */}
-        <section className="relative overflow-hidden bg-[#0d2238] text-white">
-          <div className="absolute -right-40 -top-40 h-[600px] w-[600px] rounded-full bg-[#e8752b]/10 blur-3xl" />
+        <section className="relative overflow-hidden bg-[#174a70] text-white">
+          <div className="absolute -right-40 -top-40 h-[600px] w-[600px] rounded-full bg-[#f2a07a]/10 blur-3xl" />
 
           <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-8 lg:pb-32 lg:pt-40">
-            <p className="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-[#e8752b]">
+            <p className="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-[#f2a07a]">
               AIS Journal
             </p>
 
@@ -81,14 +81,14 @@ export default function NewsEventsPage() {
             </p>
           </div>
 
-          <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-[#e8752b] to-transparent" />
+          <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-[#f2a07a] to-transparent" />
         </section>
 
         {/* FEATURED NEWS */}
         <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
           <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Latest
               </p>
 
@@ -97,7 +97,7 @@ export default function NewsEventsPage() {
               </h2>
             </div>
 
-            <p className="max-w-md text-sm leading-6 text-[#68737d]">
+            <p className="max-w-md text-sm leading-6 text-[#5f6367]">
               News, announcements and stories will be managed through the AIS
               content system as the platform grows.
             </p>
@@ -123,15 +123,15 @@ export default function NewsEventsPage() {
                     className="object-cover transition duration-700 group-hover:scale-105"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#081827]/60 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d2f4a]/60 via-transparent to-transparent" />
 
-                  <span className="absolute bottom-5 left-5 rounded-full bg-[#e8752b] px-4 py-2 text-[10px] font-bold uppercase tracking-[0.16em] text-white">
+                  <span className="absolute bottom-5 left-5 rounded-full bg-[#f2a07a] px-4 py-2 text-[10px] font-bold uppercase tracking-[0.16em] text-white">
                     {story.category}
                   </span>
                 </div>
 
                 <div className="p-7 lg:p-8">
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#68737d]">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#5f6367]">
                     {story.date}
                   </p>
 
@@ -139,13 +139,13 @@ export default function NewsEventsPage() {
                     {story.title}
                   </h3>
 
-                  <p className="mt-4 text-sm leading-7 text-[#68737d]">
+                  <p className="mt-4 text-sm leading-7 text-[#5f6367]">
                     {story.description}
                   </p>
 
                   <button
                     disabled
-                    className="mt-7 inline-flex cursor-default items-center gap-3 text-xs font-bold uppercase tracking-[0.16em] text-[#0d2238]/40"
+                    className="mt-7 inline-flex cursor-default items-center gap-3 text-xs font-bold uppercase tracking-[0.16em] text-[#174a70]/40"
                   >
                     Read story
                     <span>→</span>
@@ -161,7 +161,7 @@ export default function NewsEventsPage() {
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
             <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr] lg:gap-24">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                   Stay involved
                 </p>
 
@@ -169,14 +169,14 @@ export default function NewsEventsPage() {
                   What&apos;s happening?
                 </h2>
 
-                <p className="mt-6 max-w-md text-base leading-7 text-[#68737d]">
+                <p className="mt-6 max-w-md text-base leading-7 text-[#5f6367]">
                   From major school occasions to everyday community activities,
                   the events area will keep families and visitors connected.
                 </p>
 
                 <Link
                   href="/contact"
-                  className="group mt-8 inline-flex items-center gap-4 rounded-full bg-[#0d2238] px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] text-white transition hover:bg-[#e8752b]"
+                  className="group mt-8 inline-flex items-center gap-4 rounded-full bg-[#174a70] px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] text-white transition hover:bg-[#f2a07a]"
                 >
                   Contact AIS
                   <span className="transition-transform group-hover:translate-x-1">
@@ -185,18 +185,18 @@ export default function NewsEventsPage() {
                 </Link>
               </div>
 
-              <div className="divide-y divide-[#dfe4e8] border-y border-[#dfe4e8]">
+              <div className="divide-y divide-[#e2e2e2] border-y border-[#e2e2e2]">
                 {eventTypes.map((event, index) => (
                   <div
                     key={event.title}
                     className="group grid gap-5 py-8 md:grid-cols-[100px_1fr_auto] md:items-center"
                   >
-                    <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#e8752b]">
+                    <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#f2a07a]">
                       0{index + 1}
                     </span>
 
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#68737d]">
+                      <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#5f6367]">
                         {event.label}
                       </p>
 
@@ -204,12 +204,12 @@ export default function NewsEventsPage() {
                         {event.title}
                       </h3>
 
-                      <p className="mt-2 max-w-lg text-sm leading-6 text-[#68737d]">
+                      <p className="mt-2 max-w-lg text-sm leading-6 text-[#5f6367]">
                         {event.description}
                       </p>
                     </div>
 
-                    <span className="hidden text-2xl text-[#e8752b] transition-transform group-hover:translate-x-1 md:block">
+                    <span className="hidden text-2xl text-[#f2a07a] transition-transform group-hover:translate-x-1 md:block">
                       →
                     </span>
                   </div>
@@ -220,7 +220,7 @@ export default function NewsEventsPage() {
         </section>
 
         {/* ONGOING EVENT FEATURE */}
-        <section className="bg-[#0d2238] text-white">
+        <section className="bg-[#174a70] text-white">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
             <div className="grid items-center gap-12 lg:grid-cols-[1fr_1fr] lg:gap-20">
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -231,15 +231,15 @@ export default function NewsEventsPage() {
                   className="object-cover"
                 />
 
-                <div className="absolute inset-0 bg-[#081827]/20" />
+                <div className="absolute inset-0 bg-[#0d2f4a]/20" />
 
-                <div className="absolute bottom-6 left-6 rounded-full bg-[#e8752b] px-5 py-3 text-xs font-bold uppercase tracking-[0.16em]">
+                <div className="absolute bottom-6 left-6 rounded-full bg-[#f2a07a] px-5 py-3 text-xs font-bold uppercase tracking-[0.16em]">
                   Live / Ongoing
                 </div>
               </div>
 
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                   Follow the moment
                 </p>
 
@@ -272,9 +272,9 @@ export default function NewsEventsPage() {
         </section>
 
         {/* CALENDAR CTA */}
-        <section className="bg-[#f7f5f1]">
+        <section className="bg-[#ffffff]">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
-            <div className="rounded-[2rem] bg-[#e8752b] px-7 py-14 text-white md:px-12 lg:px-16">
+            <div className="rounded-[2rem] bg-[#f2a07a] px-7 py-14 text-white md:px-12 lg:px-16">
               <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60">
@@ -293,7 +293,7 @@ export default function NewsEventsPage() {
 
                 <Link
                   href="/contact"
-                  className="w-fit rounded-full bg-white px-7 py-4 text-xs font-bold uppercase tracking-[0.15em] text-[#0d2238] transition hover:bg-[#0d2238] hover:text-white"
+                  className="w-fit rounded-full bg-white px-7 py-4 text-xs font-bold uppercase tracking-[0.15em] text-[#174a70] transition hover:bg-[#174a70] hover:text-white"
                 >
                   Get in touch
                 </Link>

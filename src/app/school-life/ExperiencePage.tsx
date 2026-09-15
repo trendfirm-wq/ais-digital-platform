@@ -24,10 +24,10 @@ export default function ExperiencePage({
   experience: ExperienceData;
 }) {
   return (
-    <main className="bg-[#f7f5f1] text-[#17212b]">
+    <main className="bg-[#ffffff] text-[#090909]">
 
       {/* HERO */}
-      <section className="relative min-h-[65vh] overflow-hidden bg-[#0d2238]">
+      <section className="relative min-h-[65vh] overflow-hidden bg-[#174a70]">
         <Image
           src={experience.image}
           alt={experience.title}
@@ -36,11 +36,11 @@ export default function ExperiencePage({
           className="object-cover opacity-45"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0d2238] via-[#0d2238]/75 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#174a70] via-[#174a70]/75 to-transparent" />
 
         <div className="relative flex min-h-[65vh] items-end px-6 py-20 md:px-12 lg:px-20 lg:py-28">
           <div className="mx-auto w-full max-w-7xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#e8752b]">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#f2a07a]">
               {experience.category}
             </p>
 
@@ -59,21 +59,21 @@ export default function ExperiencePage({
       <section className="px-6 py-20 md:px-12 lg:px-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.75fr_1.25fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
               The Experience
             </p>
 
-            <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#0d2238] md:text-5xl">
+            <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-5xl">
               An important part of the AIS journey.
             </h2>
           </div>
 
           <div>
-            <p className="text-lg leading-8 text-[#68737d]">
+            <p className="text-lg leading-8 text-[#5f6367]">
               {experience.description}
             </p>
 
-            <p className="mt-6 text-lg leading-8 text-[#68737d]">
+            <p className="mt-6 text-lg leading-8 text-[#5f6367]">
               Official AIS information, activities and programmes will be added
               to this page as they are confirmed.
             </p>
@@ -84,11 +84,11 @@ export default function ExperiencePage({
       {/* HIGHLIGHTS */}
       <section className="bg-white px-6 py-20 md:px-12 lg:px-20 lg:py-28">
         <div className="mx-auto max-w-7xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
             Highlights
           </p>
 
-          <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#0d2238] md:text-5xl">
+          <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#174a70] md:text-5xl">
             What this area will cover.
           </h2>
 
@@ -96,17 +96,17 @@ export default function ExperiencePage({
             {experience.highlights.map((highlight, index) => (
               <div
                 key={highlight}
-                className="rounded-3xl border border-[#dfe4e8] bg-[#f7f5f1] p-7"
+                className="rounded-3xl border border-[#e2e2e2] bg-[#ffffff] p-7"
               >
-                <span className="text-sm font-semibold text-[#e8752b]">
+                <span className="text-sm font-semibold text-[#f2a07a]">
                   0{index + 1}
                 </span>
 
-                <h3 className="mt-10 text-xl font-semibold text-[#0d2238]">
+                <h3 className="mt-10 text-xl font-semibold text-[#174a70]">
                   {highlight}
                 </h3>
 
-                <div className="mt-6 h-px w-10 bg-[#e8752b]" />
+                <div className="mt-6 h-px w-10 bg-[#f2a07a]" />
               </div>
             ))}
           </div>
@@ -114,10 +114,10 @@ export default function ExperiencePage({
       </section>
 
       {/* CONTENT PLACEHOLDER */}
-      <section className="bg-[#0d2238] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
+      <section className="bg-[#174a70] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
               AIS Information
             </p>
 
@@ -140,13 +140,13 @@ export default function ExperiencePage({
           {experience.previous ? (
             <Link
               href={experience.previous.href}
-              className="rounded-2xl border border-[#dfe4e8] bg-white px-6 py-5 transition hover:border-[#e8752b]"
+              className="rounded-2xl border border-[#e2e2e2] bg-white px-6 py-5 transition hover:border-[#f2a07a]"
             >
-              <span className="block text-xs uppercase tracking-wider text-[#68737d]">
+              <span className="block text-xs uppercase tracking-wider text-[#5f6367]">
                 Previous
               </span>
 
-              <span className="mt-1 block font-semibold text-[#0d2238]">
+              <span className="mt-1 block font-semibold text-[#174a70]">
                 ← {experience.previous.label}
               </span>
             </Link>
@@ -157,7 +157,7 @@ export default function ExperiencePage({
           {experience.next ? (
             <Link
               href={experience.next.href}
-              className="rounded-2xl bg-[#e8752b] px-6 py-5 text-white transition hover:bg-[#c95d1c]"
+              className="rounded-2xl bg-[#f2a07a] px-6 py-5 text-white transition hover:bg-[#d9825b]"
             >
               <span className="block text-xs uppercase tracking-wider text-white/70">
                 Next
@@ -174,7 +174,7 @@ export default function ExperiencePage({
       </section>
 
       {/* CTA */}
-      <section className="bg-[#e8752b] px-6 py-20 md:px-12 lg:px-20">
+      <section className="bg-[#f2a07a] px-6 py-20 md:px-12 lg:px-20">
         <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <h2 className="max-w-2xl text-4xl font-semibold tracking-tight text-white md:text-5xl">
             Explore the wider AIS experience.
@@ -182,7 +182,7 @@ export default function ExperiencePage({
 
           <Link
             href="/admissions"
-            className="inline-flex w-fit rounded-full bg-[#0d2238] px-7 py-4 font-semibold text-white"
+            className="inline-flex w-fit rounded-full bg-[#174a70] px-7 py-4 font-semibold text-white"
           >
             Explore Admissions →
           </Link>

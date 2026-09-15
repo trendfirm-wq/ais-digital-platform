@@ -35,12 +35,12 @@ export default function CommunityPage() {
     <>
       <Header />
 
-      <main className="bg-[#f7f5f1] text-[#17212b]">
+      <main className="bg-[#ffffff] text-[#090909]">
 
         {/* =====================================================
             HERO
         ===================================================== */}
-        <section className="relative min-h-[75vh] overflow-hidden bg-[#0d2238] text-white">
+        <section className="relative min-h-[75vh] overflow-hidden bg-[#174a70] text-white">
           <Image
             src="/images/hero/ais-community.jpg"
             alt="AIS community"
@@ -49,11 +49,11 @@ export default function CommunityPage() {
             className="object-cover opacity-45"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-[#081827] via-[#081827]/80 to-[#081827]/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0d2f4a] via-[#0d2f4a]/80 to-[#0d2f4a]/20" />
 
           <div className="relative z-10 mx-auto flex min-h-[75vh] max-w-7xl items-end px-6 pb-16 pt-32 lg:px-8 lg:pb-24">
             <div className="max-w-5xl">
-              <p className="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-[#e8752b]">
+              <p className="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-[#f2a07a]">
                 AIS Community
               </p>
 
@@ -79,7 +79,7 @@ export default function CommunityPage() {
         <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
           <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Together
               </p>
 
@@ -89,13 +89,13 @@ export default function CommunityPage() {
             </div>
 
             <div>
-              <p className="text-lg leading-8 text-[#68737d]">
+              <p className="text-lg leading-8 text-[#5f6367]">
                 AIS is shaped not only by what happens in classrooms, but also
                 by the relationships between students, families, staff,
                 partners and the wider community.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-[#68737d]">
+              <p className="mt-6 text-lg leading-8 text-[#5f6367]">
                 This section will grow into a central place for community
                 information, stories, opportunities and engagement.
               </p>
@@ -110,7 +110,7 @@ export default function CommunityPage() {
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
 
             <div className="mb-14">
-              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Our community
               </p>
 
@@ -119,13 +119,13 @@ export default function CommunityPage() {
               </h2>
             </div>
 
-            <div className="divide-y divide-[#dfe4e8] border-y border-[#dfe4e8]">
+            <div className="divide-y divide-[#e2e2e2] border-y border-[#e2e2e2]">
               {communityAreas.map((area) => (
                 <div
                   key={area.number}
                   className="group grid gap-6 py-9 md:grid-cols-[100px_0.8fr_1fr_auto] md:items-center"
                 >
-                  <span className="text-xs font-bold tracking-[0.15em] text-[#e8752b]">
+                  <span className="text-xs font-bold tracking-[0.15em] text-[#f2a07a]">
                     {area.number}
                   </span>
 
@@ -133,11 +133,11 @@ export default function CommunityPage() {
                     {area.title}
                   </h3>
 
-                  <p className="max-w-xl text-sm leading-7 text-[#68737d]">
+                  <p className="max-w-xl text-sm leading-7 text-[#5f6367]">
                     {area.description}
                   </p>
 
-                  <span className="text-xl text-[#e8752b] transition-transform duration-300 group-hover:translate-x-1">
+                  <span className="text-xl text-[#f2a07a] transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
                 </div>
@@ -149,7 +149,7 @@ export default function CommunityPage() {
         {/* =====================================================
             COMMUNITY IMAGE
         ===================================================== */}
-        <section className="bg-[#f7f5f1]">
+        <section className="bg-[#ffffff]">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
             <div className="grid gap-6 md:grid-cols-2">
 
@@ -178,12 +178,12 @@ export default function CommunityPage() {
         {/* =====================================================
             COMMUNITY STORIES
         ===================================================== */}
-        <section className="bg-[#0d2238] text-white">
+        <section className="bg-[#174a70] text-white">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
 
             <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                   Community stories
                 </p>
 
@@ -201,9 +201,9 @@ export default function CommunityPage() {
                 ].map((story, index) => (
                   <div
                     key={story}
-                    className="group border border-white/10 p-7 transition duration-300 hover:border-[#e8752b] hover:bg-white/[0.03]"
+                    className="group border border-white/10 p-7 transition duration-300 hover:border-[#f2a07a] hover:bg-white/[0.03]"
                   >
-                    <span className="text-xs font-bold text-[#e8752b]">
+                    <span className="text-xs font-bold text-[#f2a07a]">
                       0{index + 1}
                     </span>
 
@@ -216,7 +216,7 @@ export default function CommunityPage() {
                       here.
                     </p>
 
-                    <span className="mt-7 inline-block text-[#e8752b] transition-transform group-hover:translate-x-1">
+                    <span className="mt-7 inline-block text-[#f2a07a] transition-transform group-hover:translate-x-1">
                       →
                     </span>
                   </div>
@@ -230,10 +230,10 @@ export default function CommunityPage() {
         {/* =====================================================
             GET INVOLVED
         ===================================================== */}
-        <section className="bg-[#f7f5f1]">
+        <section className="bg-[#ffffff]">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
 
-            <div className="overflow-hidden rounded-[2rem] bg-[#e8752b] px-7 py-14 text-white md:px-12 lg:px-16 lg:py-16">
+            <div className="overflow-hidden rounded-[2rem] bg-[#f2a07a] px-7 py-14 text-white md:px-12 lg:px-16 lg:py-16">
               <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
 
                 <div>
@@ -253,7 +253,7 @@ export default function CommunityPage() {
 
                 <Link
                   href="/contact"
-                  className="w-fit rounded-full bg-white px-7 py-4 text-xs font-bold uppercase tracking-[0.15em] text-[#0d2238] transition hover:bg-[#0d2238] hover:text-white"
+                  className="w-fit rounded-full bg-white px-7 py-4 text-xs font-bold uppercase tracking-[0.15em] text-[#174a70] transition hover:bg-[#174a70] hover:text-white"
                 >
                   Contact AIS →
                 </Link>

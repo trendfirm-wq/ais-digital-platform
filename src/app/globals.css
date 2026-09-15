@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --ais-navy: #0d2238;
-  --ais-navy-dark: #081827;
-  --ais-navy-light: #183a59;
+  /* =====================================================
+     AIS BRAND COLOURS
+     Provisional shades — awaiting official brand values
+  ===================================================== */
 
-  --ais-orange: #e8752b;
-  --ais-orange-dark: #c95d1c;
-  --ais-orange-soft: #fff1e8;
+  /* =====================================================
+     PRIMARY — AIS BLUE
+     Main institutional colour
+  ===================================================== */
 
+  --ais-blue: #0d2f4a;
+  --ais-blue-dark: #082236;
+  --ais-blue-light: #174a70;
+
+  /* =====================================================
+     ACCENT — AIS PEACH
+     Used for highlights, details and calls to action
+  ===================================================== */
+
+  --ais-peach: #f2a07a;
+  --ais-peach-dark: #d9825b;
+  --ais-peach-soft: #fff1eb;
+
+  /* =====================================================
+     CORE
+  ===================================================== */
+
+  --ais-black: #090909;
   --ais-white: #ffffff;
-  --ais-cream: #f7f5f1;
-  --ais-light: #eef1f3;
 
-  --ais-text: #17212b;
-  --ais-muted: #68737d;
-  --ais-border: #dfe4e8;
+  /* =====================================================
+     SUPPORTING
+  ===================================================== */
+
+  --ais-text: #090909;
+  --ais-muted: #5f6367;
+  --ais-border: #e2e2e2;
+  --ais-light: #f5f5f5;
 }
+
+/* =====================================================
+   GLOBAL RESET
+===================================================== */
 
 * {
   box-sizing: border-box;
 }
+
+/* =====================================================
+   DOCUMENT
+===================================================== */
 
 html {
   scroll-behavior: smooth;
@@ -33,16 +64,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* =====================================================
+   INTERACTION
+===================================================== */
+
 button,
 a {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* =====================================================
+   IMAGES
+===================================================== */
+
 img {
   max-width: 100%;
 }
 
+/* =====================================================
+   TEXT SELECTION
+===================================================== */
+
 ::selection {
-  background: var(--ais-orange);
-  color: white;
+  background: var(--ais-peach);
+  color: var(--ais-black);
 }

@@ -19,7 +19,7 @@ const admissionsLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-[#081827] text-white">
+    <footer className="relative overflow-hidden bg-[#0d2f4a] text-white">
       {/* Large background word */}
       <div
         aria-hidden="true"
@@ -33,7 +33,7 @@ export default function Footer() {
         {/* Top statement */}
         <div className="grid gap-12 border-b border-white/10 pb-16 lg:grid-cols-[1.25fr_0.75fr] lg:items-end">
           <div>
-            <span className="mb-5 block text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+            <span className="mb-5 block text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
               T.I. Ahmadiyya International School
             </span>
 
@@ -50,7 +50,7 @@ export default function Footer() {
 
             <Link
               href="/admissions"
-              className="group inline-flex items-center gap-4 rounded-full bg-[#e8752b] px-7 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#0d2238]"
+              className="group inline-flex items-center gap-4 rounded-full bg-[#f2a07a] px-7 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#174a70]"
             >
               Explore Admissions
               <span className="transition-transform duration-300 group-hover:translate-x-1">
@@ -86,7 +86,7 @@ export default function Footer() {
 
           {/* Explore */}
           <div>
-            <h3 className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+            <h3 className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
               Explore
             </h3>
 
@@ -97,7 +97,7 @@ export default function Footer() {
                     href={link.href}
                     className="group inline-flex items-center text-sm text-white/65 transition-colors duration-300 hover:text-white"
                   >
-                    <span className="mr-0 w-0 overflow-hidden text-[#e8752b] transition-all duration-300 group-hover:mr-2 group-hover:w-3">
+                    <span className="mr-0 w-0 overflow-hidden text-[#f2a07a] transition-all duration-300 group-hover:mr-2 group-hover:w-3">
                       →
                     </span>
                     {link.label}
@@ -109,7 +109,7 @@ export default function Footer() {
 
           {/* Admissions */}
           <div>
-            <h3 className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+            <h3 className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
               Admissions
             </h3>
 
@@ -120,7 +120,7 @@ export default function Footer() {
                     href={link.href}
                     className="group inline-flex items-center text-sm text-white/65 transition-colors duration-300 hover:text-white"
                   >
-                    <span className="mr-0 w-0 overflow-hidden text-[#e8752b] transition-all duration-300 group-hover:mr-2 group-hover:w-3">
+                    <span className="mr-0 w-0 overflow-hidden text-[#f2a07a] transition-all duration-300 group-hover:mr-2 group-hover:w-3">
                       →
                     </span>
                     {link.label}
@@ -132,7 +132,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+            <h3 className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
               Contact
             </h3>
 

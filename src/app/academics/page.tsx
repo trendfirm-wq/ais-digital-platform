@@ -42,13 +42,13 @@ export default function AcademicsPage() {
     <>
       <Header />
 
-      <main className="bg-[#f7f5f1]">
+      <main className="bg-[#ffffff]">
 
         {/* HERO */}
-        <section className="relative flex min-h-[72vh] items-end overflow-hidden bg-[#0d2238]">
+        <section className="relative flex min-h-[72vh] items-end overflow-hidden bg-[#174a70]">
           <div
             aria-hidden="true"
-            className="absolute right-[-10%] top-[-20%] h-[650px] w-[650px] rounded-full border-[100px] border-[#e8752b]/10"
+            className="absolute right-[-10%] top-[-20%] h-[650px] w-[650px] rounded-full border-[100px] border-[#f2a07a]/10"
           />
 
           <div
@@ -58,7 +58,7 @@ export default function AcademicsPage() {
 
           <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 pt-40 lg:px-8 lg:pb-28">
             <div className="max-w-5xl">
-              <span className="mb-6 block text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+              <span className="mb-6 block text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Academics
               </span>
 
@@ -85,16 +85,16 @@ export default function AcademicsPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
               <div>
-                <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+                <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                   Our Approach
                 </span>
 
-                <h2 className="mt-5 text-4xl font-bold leading-tight text-[#0d2238] md:text-5xl">
+                <h2 className="mt-5 text-4xl font-bold leading-tight text-[#174a70] md:text-5xl">
                   Education that develops the whole student.
                 </h2>
               </div>
 
-              <div className="space-y-6 text-lg leading-8 text-[#68737d]">
+              <div className="space-y-6 text-lg leading-8 text-[#5f6367]">
                 <p>
                   AIS provides learning pathways across Nursery, Kindergarten,
                   Primary and Junior High School.
@@ -116,21 +116,21 @@ export default function AcademicsPage() {
         </section>
 
         {/* PROGRAMMES */}
-        <section className="bg-[#f7f5f1] py-24 md:py-32">
+        <section className="bg-[#ffffff] py-24 md:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
             <div className="mb-16 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
               <div>
-                <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+                <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                   Learning Pathways
                 </span>
 
-                <h2 className="mt-5 max-w-3xl text-4xl font-bold leading-tight text-[#0d2238] md:text-6xl">
+                <h2 className="mt-5 max-w-3xl text-4xl font-bold leading-tight text-[#174a70] md:text-6xl">
                   A pathway for every stage.
                 </h2>
               </div>
 
-              <p className="max-w-md text-base leading-7 text-[#68737d]">
+              <p className="max-w-md text-base leading-7 text-[#5f6367]">
                 Explore each stage of the AIS academic journey.
               </p>
             </div>
@@ -140,16 +140,16 @@ export default function AcademicsPage() {
                 <Link
                   key={programme.number}
                   href={programme.href}
-                  className="group relative min-h-[330px] overflow-hidden bg-[#0d2238] p-8 transition-all duration-500 hover:bg-[#081827] md:p-10"
+                  className="group relative min-h-[330px] overflow-hidden bg-[#174a70] p-8 transition-all duration-500 hover:bg-[#0d2f4a] md:p-10"
                 >
                   {/* Number */}
-                  <span className="absolute right-7 top-5 text-7xl font-black tracking-[-0.06em] text-white/[0.05] transition-colors duration-500 group-hover:text-[#e8752b]/10 md:text-9xl">
+                  <span className="absolute right-7 top-5 text-7xl font-black tracking-[-0.06em] text-white/[0.05] transition-colors duration-500 group-hover:text-[#f2a07a]/10 md:text-9xl">
                     {programme.number}
                   </span>
 
                   <div className="relative flex h-full flex-col justify-between">
                     <div>
-                      <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+                      <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
                         {programme.level}
                       </span>
 
@@ -165,7 +165,7 @@ export default function AcademicsPage() {
                     <div className="mt-10 flex items-center gap-4 text-sm font-bold uppercase tracking-[0.15em] text-white">
                       Explore programme
 
-                      <span className="text-[#e8752b] transition-transform duration-300 group-hover:translate-x-2">
+                      <span className="text-[#f2a07a] transition-transform duration-300 group-hover:translate-x-2">
                         →
                       </span>
                     </div>
@@ -177,13 +177,13 @@ export default function AcademicsPage() {
         </section>
 
         {/* CURRICULUM */}
-        <section className="bg-[#0d2238] py-24 text-white md:py-32">
+        <section className="bg-[#174a70] py-24 text-white md:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
             <div className="grid gap-14 lg:grid-cols-[1fr_1fr] lg:items-center">
 
               <div>
-                <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+                <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                   Curriculum & Programmes
                 </span>
 
@@ -201,7 +201,7 @@ export default function AcademicsPage() {
 
                 <Link
                   href="/academics/curriculum"
-                  className="group mt-9 inline-flex items-center gap-4 rounded-full bg-[#e8752b] px-7 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#0d2238]"
+                  className="group mt-9 inline-flex items-center gap-4 rounded-full bg-[#f2a07a] px-7 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#174a70]"
                 >
                   Explore Curriculum
 
@@ -212,11 +212,11 @@ export default function AcademicsPage() {
               </div>
 
               {/* VISUAL BLOCK */}
-              <div className="relative min-h-[450px] overflow-hidden bg-[#081827] p-8 md:p-12">
+              <div className="relative min-h-[450px] overflow-hidden bg-[#0d2f4a] p-8 md:p-12">
 
                 <div
                   aria-hidden="true"
-                  className="absolute -right-28 -top-28 h-80 w-80 rounded-full border-[50px] border-[#e8752b]/15"
+                  className="absolute -right-28 -top-28 h-80 w-80 rounded-full border-[50px] border-[#f2a07a]/15"
                 />
 
                 <div
@@ -240,7 +240,7 @@ export default function AcademicsPage() {
                         key={item}
                         className="border border-white/10 p-4"
                       >
-                        <span className="text-xs font-bold text-[#e8752b]">
+                        <span className="text-xs font-bold text-[#f2a07a]">
                           0{index + 1}
                         </span>
 
@@ -262,11 +262,11 @@ export default function AcademicsPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
             <div className="mb-16">
-              <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+              <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
                 Academic Experience
               </span>
 
-              <h2 className="mt-5 max-w-3xl text-4xl font-bold leading-tight text-[#0d2238] md:text-6xl">
+              <h2 className="mt-5 max-w-3xl text-4xl font-bold leading-tight text-[#174a70] md:text-6xl">
                 More than what happens in a textbook.
               </h2>
             </div>
@@ -292,17 +292,17 @@ export default function AcademicsPage() {
               ].map((item) => (
                 <div
                   key={item.number}
-                  className="min-h-[280px] border border-[#dfe4e8] p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#e8752b]"
+                  className="min-h-[280px] border border-[#e2e2e2] p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#f2a07a]"
                 >
-                  <span className="text-sm font-bold tracking-[0.2em] text-[#e8752b]">
+                  <span className="text-sm font-bold tracking-[0.2em] text-[#f2a07a]">
                     {item.number}
                   </span>
 
-                  <h3 className="mt-16 text-3xl font-bold text-[#0d2238]">
+                  <h3 className="mt-16 text-3xl font-bold text-[#174a70]">
                     {item.title}
                   </h3>
 
-                  <p className="mt-4 text-base leading-7 text-[#68737d]">
+                  <p className="mt-4 text-base leading-7 text-[#5f6367]">
                     {item.text}
                   </p>
                 </div>
@@ -313,7 +313,7 @@ export default function AcademicsPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-[#e8752b]">
+        <section className="bg-[#f2a07a]">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-24">
             <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
 
@@ -329,7 +329,7 @@ export default function AcademicsPage() {
 
               <Link
                 href="/school-life"
-                className="group inline-flex shrink-0 items-center justify-center gap-4 rounded-full bg-[#081827] px-8 py-5 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#081827]"
+                className="group inline-flex shrink-0 items-center justify-center gap-4 rounded-full bg-[#0d2f4a] px-8 py-5 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#0d2f4a]"
               >
                 Explore School Life
 

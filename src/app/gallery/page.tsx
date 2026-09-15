@@ -58,12 +58,12 @@ export default function GalleryPage() {
     <>
       <Header />
 
-      <main className="bg-[#f7f5f1] text-[#17212b]">
+      <main className="bg-[#ffffff] text-[#090909]">
 
         {/* HERO */}
-        <section className="bg-[#0d2238] text-white">
+        <section className="bg-[#174a70] text-white">
           <div className="mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-8 lg:pb-32 lg:pt-40">
-            <p className="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-[#e8752b]">
+            <p className="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-[#f2a07a]">
               AIS Gallery
             </p>
 
@@ -81,7 +81,7 @@ export default function GalleryPage() {
         </section>
 
         {/* FILTER BAR */}
-        <section className="sticky top-0 z-20 border-b border-[#dfe4e8] bg-[#f7f5f1]/95 backdrop-blur">
+        <section className="sticky top-0 z-20 border-b border-[#e2e2e2] bg-[#ffffff]/95 backdrop-blur">
           <div className="mx-auto flex max-w-7xl gap-6 overflow-x-auto px-6 py-5 lg:px-8">
             {[
               "All",
@@ -95,8 +95,8 @@ export default function GalleryPage() {
                 key={filter}
                 className={`shrink-0 rounded-full px-5 py-2.5 text-xs font-bold uppercase tracking-[0.14em] transition ${
                   index === 0
-                    ? "bg-[#0d2238] text-white"
-                    : "border border-[#0d2238]/10 text-[#68737d] hover:border-[#e8752b] hover:text-[#e8752b]"
+                    ? "bg-[#174a70] text-white"
+                    : "border border-[#174a70]/10 text-[#5f6367] hover:border-[#f2a07a] hover:text-[#f2a07a]"
                 }`}
               >
                 {filter}
@@ -127,10 +127,10 @@ export default function GalleryPage() {
                   priority={index < 3}
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#081827]/80 via-[#081827]/10 to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0d2f4a]/80 via-[#0d2f4a]/10 to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-100" />
 
                 <div className="absolute inset-x-0 bottom-0 p-6 text-white">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
                     {item.category}
                   </p>
 
@@ -148,11 +148,11 @@ export default function GalleryPage() {
         </section>
 
         {/* CMS NOTE / FUTURE */}
-        <section className="bg-[#0d2238] text-white">
+        <section className="bg-[#174a70] text-white">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
             <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#e8752b]">
+                <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#f2a07a]">
                   More to come
                 </p>
 

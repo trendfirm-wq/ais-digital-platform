@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AdmissionsCTA() {
   return (
-    <section className="relative overflow-hidden bg-[#e8752b]">
+    <section className="relative overflow-hidden bg-[#f2a07a]">
       {/* Decorative elements */}
       <div
         aria-hidden="true"
@@ -11,7 +11,7 @@ export default function AdmissionsCTA() {
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-40 -left-20 h-96 w-96 rounded-full border-[60px] border-[#081827]/[0.06]"
+        className="pointer-events-none absolute -bottom-40 -left-20 h-96 w-96 rounded-full border-[60px] border-[#0d2f4a]/[0.06]"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
@@ -37,7 +37,7 @@ export default function AdmissionsCTA() {
           <div className="flex flex-col gap-4 sm:flex-row lg:flex-col">
             <Link
               href="/admissions"
-              className="group inline-flex items-center justify-center gap-5 rounded-full bg-[#081827] px-8 py-5 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#081827]"
+              className="group inline-flex items-center justify-center gap-5 rounded-full bg-[#0d2f4a] px-8 py-5 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white hover:text-[#0d2f4a]"
             >
               Explore Admissions
 
@@ -48,7 +48,7 @@ export default function AdmissionsCTA() {
 
             <Link
               href="/contact"
-              className="group inline-flex items-center justify-center gap-5 rounded-full border border-white/40 px-8 py-5 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:border-white hover:bg-white hover:text-[#081827]"
+              className="group inline-flex items-center justify-center gap-5 rounded-full border border-white/40 px-8 py-5 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:border-white hover:bg-white hover:text-[#0d2f4a]"
             >
               Make an Enquiry
 

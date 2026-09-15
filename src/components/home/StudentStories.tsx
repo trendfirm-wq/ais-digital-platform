@@ -32,13 +32,13 @@ const stories = [
 
 export default function StudentStories() {
   return (
-    <section className="relative overflow-hidden bg-[#0d2238] py-24 text-white md:py-32">
+    <section className="relative overflow-hidden bg-[#174a70] py-24 text-white md:py-32">
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
 
         {/* HEADER */}
         <div className="mb-16 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
           <div>
-            <span className="mb-4 block text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+            <span className="mb-4 block text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
               Student Stories
             </span>
 
@@ -58,7 +58,7 @@ export default function StudentStories() {
           {stories.map((story) => (
             <article
               key={story.id}
-              className="group relative overflow-hidden bg-[#081827]"
+              className="group relative overflow-hidden bg-[#0d2f4a]"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
@@ -69,7 +69,7 @@ export default function StudentStories() {
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#081827]/70 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0d2f4a]/70 to-transparent" />
 
                 <span className="absolute left-6 top-6 text-sm font-bold tracking-[0.2em] text-white/70">
                   {story.id}
@@ -77,7 +77,7 @@ export default function StudentStories() {
               </div>
 
               <div className="p-7 md:p-8">
-                <span className="mb-3 block text-xs font-bold uppercase tracking-[0.2em] text-[#e8752b]">
+                <span className="mb-3 block text-xs font-bold uppercase tracking-[0.2em] text-[#f2a07a]">
                   {story.role}
                 </span>
 
@@ -96,7 +96,7 @@ export default function StudentStories() {
                     AIS
                   </span>
 
-                  <span className="text-xl text-[#e8752b] transition-transform duration-300 group-hover:translate-x-1">
+                  <span className="text-xl text-[#f2a07a] transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
                 </div>
@@ -106,7 +106,7 @@ export default function StudentStories() {
         </div>
 
         {/* FEATURED STORY */}
-        <div className="mt-16 grid overflow-hidden bg-[#081827] lg:grid-cols-2">
+        <div className="mt-16 grid overflow-hidden bg-[#0d2f4a] lg:grid-cols-2">
           <div className="relative min-h-[380px] lg:min-h-[500px]">
             <Image
               src="/images/home/ais-learning.jpg"
@@ -118,7 +118,7 @@ export default function StudentStories() {
           </div>
 
           <div className="flex h-full flex-col justify-center p-8 md:p-12 lg:p-16">
-            <span className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-[#e8752b]">
+            <span className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-[#f2a07a]">
               The AIS Experience
             </span>
 
@@ -139,7 +139,7 @@ export default function StudentStories() {
               >
                 Explore School Life
 
-                <span className="text-[#e8752b] transition-transform duration-300 group-hover:translate-x-2">
+                <span className="text-[#f2a07a] transition-transform duration-300 group-hover:translate-x-2">
                   →
                 </span>
               </Link>

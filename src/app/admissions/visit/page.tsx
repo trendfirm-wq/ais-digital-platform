@@ -34,13 +34,13 @@ export default function VisitPage() {
   }
 
   return (
-    <main className="bg-[#f7f5f1] text-[#17212b]">
+    <main className="bg-[#ffffff] text-[#090909]">
 
       {/* =====================================================
           HERO
       ===================================================== */}
 
-      <section className="relative min-h-[65vh] overflow-hidden bg-[#0d2238]">
+      <section className="relative min-h-[65vh] overflow-hidden bg-[#174a70]">
 
         <Image
           src="/images/facilities/campus.jpg"
@@ -50,7 +50,7 @@ export default function VisitPage() {
           className="object-cover opacity-45"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0d2238] via-[#0d2238]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#174a70] via-[#174a70]/80 to-transparent" />
 
         <div className="relative flex min-h-[65vh] items-end px-6 py-20 md:px-12 lg:px-20 lg:py-28">
 
@@ -58,12 +58,12 @@ export default function VisitPage() {
 
             <Link
               href="/admissions"
-              className="text-sm font-semibold text-white/60 transition hover:text-[#e8752b]"
+              className="text-sm font-semibold text-white/60 transition hover:text-[#f2a07a]"
             >
               ← Admissions
             </Link>
 
-            <p className="mt-10 text-sm font-semibold uppercase tracking-[0.25em] text-[#e8752b]">
+            <p className="mt-10 text-sm font-semibold uppercase tracking-[0.25em] text-[#f2a07a]">
               Visit AIS
             </p>
 
@@ -90,11 +90,11 @@ export default function VisitPage() {
 
           <div>
 
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
               Campus Visit
             </p>
 
-            <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#0d2238] md:text-5xl">
+            <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-5xl">
               See the school for yourself.
             </h2>
 
@@ -102,13 +102,13 @@ export default function VisitPage() {
 
           <div className="max-w-3xl">
 
-            <p className="text-lg leading-8 text-[#68737d]">
+            <p className="text-lg leading-8 text-[#5f6367]">
               A campus visit can help prospective families get a better sense
               of the school environment, learning spaces and wider AIS
               experience.
             </p>
 
-            <p className="mt-6 text-lg leading-8 text-[#68737d]">
+            <p className="mt-6 text-lg leading-8 text-[#5f6367]">
               Submit your preferred visit details below. The final visit
               schedule and availability will be confirmed by AIS.
             </p>
@@ -128,7 +128,7 @@ export default function VisitPage() {
 
           {/* SIDE INFORMATION */}
 
-          <div className="relative min-h-[32rem] overflow-hidden rounded-[2rem] bg-[#0d2238]">
+          <div className="relative min-h-[32rem] overflow-hidden rounded-[2rem] bg-[#174a70]">
 
             <Image
               src="/images/facilities/learning-space.jpg"
@@ -137,11 +137,11 @@ export default function VisitPage() {
               className="object-cover opacity-60"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d2238] via-[#0d2238]/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#174a70] via-[#174a70]/40 to-transparent" />
 
             <div className="absolute inset-x-0 bottom-0 p-8 md:p-10">
 
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Your Visit
               </p>
 
@@ -160,7 +160,7 @@ export default function VisitPage() {
 
           {/* FORM */}
 
-          <div className="rounded-[2rem] border border-[#dfe4e8] bg-[#f7f5f1] p-6 md:p-10 lg:p-12">
+          <div className="rounded-[2rem] border border-[#e2e2e2] bg-[#ffffff] p-6 md:p-10 lg:p-12">
 
             {submitted ? (
               <SuccessState />
@@ -168,15 +168,15 @@ export default function VisitPage() {
               <form onSubmit={handleSubmit}>
 
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                     Request a Visit
                   </p>
 
-                  <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#0d2238] md:text-4xl">
+                  <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#174a70] md:text-4xl">
                     Tell us when you would like to visit.
                   </h2>
 
-                  <p className="mt-4 leading-7 text-[#68737d]">
+                  <p className="mt-4 leading-7 text-[#5f6367]">
                     Provide your details and preferred visit information.
                   </p>
                 </div>
@@ -234,9 +234,9 @@ export default function VisitPage() {
 
                 {/* VISIT DETAILS */}
 
-                <div className="mt-8 border-t border-[#dfe4e8] pt-8">
+                <div className="mt-8 border-t border-[#e2e2e2] pt-8">
 
-                  <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#68737d]">
+                  <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#5f6367]">
                     Preferred Visit
                   </p>
 
@@ -272,9 +272,9 @@ export default function VisitPage() {
 
                 {/* STUDENT */}
 
-                <div className="mt-8 border-t border-[#dfe4e8] pt-8">
+                <div className="mt-8 border-t border-[#e2e2e2] pt-8">
 
-                  <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#68737d]">
+                  <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#5f6367]">
                     Student Information
                   </p>
 
@@ -319,17 +319,17 @@ export default function VisitPage() {
                   type="submit"
                   className="
                     mt-8 w-full rounded-full
-                    bg-[#e8752b]
+                    bg-[#f2a07a]
                     px-7 py-4
                     font-bold text-white
                     transition
-                    hover:bg-[#c95d1c]
+                    hover:bg-[#d9825b]
                   "
                 >
                   Request Campus Visit →
                 </button>
 
-                <p className="mt-4 text-center text-xs leading-5 text-[#68737d]">
+                <p className="mt-4 text-center text-xs leading-5 text-[#5f6367]">
                   Your preferred date and time are a request and will require
                   confirmation from AIS.
                 </p>
@@ -346,13 +346,13 @@ export default function VisitPage() {
           WHAT TO EXPECT
       ===================================================== */}
 
-      <section className="bg-[#0d2238] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
+      <section className="bg-[#174a70] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
 
         <div className="mx-auto max-w-7xl">
 
           <div className="max-w-2xl">
 
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
               Your Visit
             </p>
 
@@ -386,7 +386,7 @@ export default function VisitPage() {
                 className="border-t border-white/15 pt-6"
               >
 
-                <span className="text-sm font-semibold text-[#e8752b]">
+                <span className="text-sm font-semibold text-[#f2a07a]">
                   {item.number}
                 </span>
 
@@ -410,7 +410,7 @@ export default function VisitPage() {
           BOTTOM CTA
       ===================================================== */}
 
-      <section className="bg-[#e8752b] px-6 py-20 md:px-12 lg:px-20">
+      <section className="bg-[#f2a07a] px-6 py-20 md:px-12 lg:px-20">
 
         <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
 
@@ -428,7 +428,7 @@ export default function VisitPage() {
 
           <Link
             href="/contact"
-            className="inline-flex w-fit rounded-full bg-[#0d2238] px-7 py-4 font-semibold text-white transition hover:bg-[#081827]"
+            className="inline-flex w-fit rounded-full bg-[#174a70] px-7 py-4 font-semibold text-white transition hover:bg-[#0d2f4a]"
           >
             Contact AIS →
           </Link>
@@ -462,10 +462,10 @@ function Input({
   return (
     <label className="block">
 
-      <span className="mb-2 block text-sm font-semibold text-[#0d2238]">
+      <span className="mb-2 block text-sm font-semibold text-[#174a70]">
         {label}
         {required && (
-          <span className="ml-1 text-[#e8752b]">*</span>
+          <span className="ml-1 text-[#f2a07a]">*</span>
         )}
       </span>
 
@@ -478,15 +478,15 @@ function Input({
         }
         className="
           w-full rounded-2xl
-          border border-[#dfe4e8]
+          border border-[#e2e2e2]
           bg-white
           px-5 py-4
-          text-[#17212b]
+          text-[#090909]
           outline-none
           transition
-          focus:border-[#e8752b]
+          focus:border-[#f2a07a]
           focus:ring-2
-          focus:ring-[#e8752b]/10
+          focus:ring-[#f2a07a]/10
         "
       />
 
@@ -511,10 +511,10 @@ function Select({
   return (
     <label className="block">
 
-      <span className="mb-2 block text-sm font-semibold text-[#0d2238]">
+      <span className="mb-2 block text-sm font-semibold text-[#174a70]">
         {label}
         {required && (
-          <span className="ml-1 text-[#e8752b]">*</span>
+          <span className="ml-1 text-[#f2a07a]">*</span>
         )}
       </span>
 
@@ -526,15 +526,15 @@ function Select({
         }
         className="
           w-full rounded-2xl
-          border border-[#dfe4e8]
+          border border-[#e2e2e2]
           bg-white
           px-5 py-4
-          text-[#17212b]
+          text-[#090909]
           outline-none
           transition
-          focus:border-[#e8752b]
+          focus:border-[#f2a07a]
           focus:ring-2
-          focus:ring-[#e8752b]/10
+          focus:ring-[#f2a07a]/10
         "
       >
         {options.map((option) => (
@@ -564,7 +564,7 @@ function TextArea({
   return (
     <label className="block">
 
-      <span className="mb-2 block text-sm font-semibold text-[#0d2238]">
+      <span className="mb-2 block text-sm font-semibold text-[#174a70]">
         {label}
       </span>
 
@@ -576,15 +576,15 @@ function TextArea({
         }
         className="
           w-full resize-none rounded-2xl
-          border border-[#dfe4e8]
+          border border-[#e2e2e2]
           bg-white
           px-5 py-4
-          text-[#17212b]
+          text-[#090909]
           outline-none
           transition
-          focus:border-[#e8752b]
+          focus:border-[#f2a07a]
           focus:ring-2
-          focus:ring-[#e8752b]/10
+          focus:ring-[#f2a07a]/10
         "
       />
 
@@ -597,19 +597,19 @@ function SuccessState() {
   return (
     <div className="flex min-h-[32rem] flex-col items-center justify-center text-center">
 
-      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#e8752b] text-2xl font-bold text-white">
+      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#f2a07a] text-2xl font-bold text-white">
         ✓
       </div>
 
-      <p className="mt-8 text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+      <p className="mt-8 text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
         Request received
       </p>
 
-      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#0d2238] md:text-4xl">
+      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#174a70] md:text-4xl">
         Thank you for your interest in AIS.
       </h2>
 
-      <p className="mt-5 max-w-md leading-7 text-[#68737d]">
+      <p className="mt-5 max-w-md leading-7 text-[#5f6367]">
         Your visit request has been captured by this interface. Once the
         admissions backend is connected, the AIS team will receive the request
         and confirm the visit details.
@@ -619,14 +619,14 @@ function SuccessState() {
 
         <Link
           href="/admissions"
-          className="rounded-full bg-[#0d2238] px-6 py-3 font-semibold text-white"
+          className="rounded-full bg-[#174a70] px-6 py-3 font-semibold text-white"
         >
           Back to Admissions
         </Link>
 
         <Link
           href="/"
-          className="rounded-full border border-[#dfe4e8] px-6 py-3 font-semibold text-[#0d2238]"
+          className="rounded-full border border-[#e2e2e2] px-6 py-3 font-semibold text-[#174a70]"
         >
           Return Home
         </Link>

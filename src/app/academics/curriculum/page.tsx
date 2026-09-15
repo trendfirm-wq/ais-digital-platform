@@ -71,16 +71,16 @@ export default function CurriculumPage() {
     <>
       <Header />
 
-      <main className="bg-[#f7f5f1] text-[#17212b]">
+      <main className="bg-[#ffffff] text-[#090909]">
 
         {/* HERO */}
-        <section className="relative overflow-hidden bg-[#0d2238] px-6 py-28 text-white md:px-12 lg:px-20 lg:py-36">
-          <div className="absolute -right-32 -top-32 h-[28rem] w-[28rem] rounded-full bg-[#e8752b]/20 blur-3xl" />
+        <section className="relative overflow-hidden bg-[#174a70] px-6 py-28 text-white md:px-12 lg:px-20 lg:py-36">
+          <div className="absolute -right-32 -top-32 h-[28rem] w-[28rem] rounded-full bg-[#f2a07a]/20 blur-3xl" />
 
-          <div className="absolute bottom-0 left-0 h-1 w-32 bg-[#e8752b]" />
+          <div className="absolute bottom-0 left-0 h-1 w-32 bg-[#f2a07a]" />
 
           <div className="relative mx-auto max-w-7xl">
-            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#e8752b]">
+            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#f2a07a]">
               Academics
             </p>
 
@@ -99,23 +99,23 @@ export default function CurriculumPage() {
         <section className="px-6 py-20 md:px-12 lg:px-20 lg:py-28">
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Our Approach
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#0d2238] md:text-5xl">
+              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-5xl">
                 Learning with purpose.
               </h2>
             </div>
 
             <div className="max-w-3xl">
-              <p className="text-lg leading-8 text-[#68737d]">
+              <p className="text-lg leading-8 text-[#5f6367]">
                 The AIS academic experience will bring together the school&apos;s
                 approved curriculum, learning programmes and wider educational
                 experiences across every stage of the student journey.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-[#68737d]">
+              <p className="mt-6 text-lg leading-8 text-[#5f6367]">
                 Detailed curriculum information will be added as official AIS
                 academic content is confirmed and approved.
               </p>
@@ -127,11 +127,11 @@ export default function CurriculumPage() {
         <section className="bg-white px-6 py-20 md:px-12 lg:px-20 lg:py-28">
           <div className="mx-auto max-w-7xl">
             <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                 Learning Pathways
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#0d2238] md:text-5xl">
+              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#174a70] md:text-5xl">
                 Every stage has a purpose.
               </h2>
             </div>
@@ -141,27 +141,27 @@ export default function CurriculumPage() {
                 <Link
                   key={pathway.number}
                   href={pathway.href}
-                  className="group rounded-3xl border border-[#dfe4e8] bg-[#f7f5f1] p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-10"
+                  className="group rounded-3xl border border-[#e2e2e2] bg-[#ffffff] p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-10"
                 >
                   <div className="flex items-start justify-between gap-6">
-                    <span className="text-sm font-semibold text-[#e8752b]">
+                    <span className="text-sm font-semibold text-[#f2a07a]">
                       {pathway.number}
                     </span>
 
-                    <span className="text-xl text-[#68737d] transition-transform duration-300 group-hover:translate-x-1">
+                    <span className="text-xl text-[#5f6367] transition-transform duration-300 group-hover:translate-x-1">
                       ↗
                     </span>
                   </div>
 
-                  <h3 className="mt-14 text-2xl font-semibold text-[#0d2238] md:text-3xl">
+                  <h3 className="mt-14 text-2xl font-semibold text-[#174a70] md:text-3xl">
                     {pathway.title}
                   </h3>
 
-                  <p className="mt-4 max-w-xl leading-7 text-[#68737d]">
+                  <p className="mt-4 max-w-xl leading-7 text-[#5f6367]">
                     {pathway.description}
                   </p>
 
-                  <div className="mt-8 h-px w-10 bg-[#e8752b] transition-all duration-300 group-hover:w-20" />
+                  <div className="mt-8 h-px w-10 bg-[#f2a07a] transition-all duration-300 group-hover:w-20" />
                 </Link>
               ))}
             </div>
@@ -169,11 +169,11 @@ export default function CurriculumPage() {
         </section>
 
         {/* LEARNING EXPERIENCE */}
-        <section className="bg-[#0d2238] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
+        <section className="bg-[#174a70] px-6 py-20 text-white md:px-12 lg:px-20 lg:py-28">
           <div className="mx-auto max-w-7xl">
             <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr]">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                   The Learning Experience
                 </p>
 
@@ -195,7 +195,7 @@ export default function CurriculumPage() {
                       key={area.number}
                       className="border-t border-white/15 pt-5"
                     >
-                      <span className="text-sm font-semibold text-[#e8752b]">
+                      <span className="text-sm font-semibold text-[#f2a07a]">
                         {area.number}
                       </span>
 
@@ -217,19 +217,19 @@ export default function CurriculumPage() {
         {/* CURRICULUM DETAILS PLACEHOLDER */}
         <section className="px-6 py-20 md:px-12 lg:px-20 lg:py-28">
           <div className="mx-auto max-w-7xl">
-            <div className="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-[#dfe4e8] md:p-12 lg:p-16">
+            <div className="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-[#e2e2e2] md:p-12 lg:p-16">
               <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e8752b]">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
                     Curriculum Details
                   </p>
 
-                  <h2 className="mt-5 text-3xl font-semibold tracking-tight text-[#0d2238] md:text-4xl">
+                  <h2 className="mt-5 text-3xl font-semibold tracking-tight text-[#174a70] md:text-4xl">
                     Official academic information will live here.
                   </h2>
                 </div>
 
-                <div className="space-y-6 text-[#68737d]">
+                <div className="space-y-6 text-[#5f6367]">
                   <p className="text-lg leading-8">
                     This section is intentionally structured for the approved
                     AIS curriculum content.
@@ -246,9 +246,9 @@ export default function CurriculumPage() {
                     ].map((item) => (
                       <div
                         key={item}
-                        className="rounded-2xl bg-[#f7f5f1] px-5 py-4"
+                        className="rounded-2xl bg-[#ffffff] px-5 py-4"
                       >
-                        <span className="font-medium text-[#0d2238]">
+                        <span className="font-medium text-[#174a70]">
                           {item}
                         </span>
                       </div>
@@ -261,7 +261,7 @@ export default function CurriculumPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-[#e8752b] px-6 py-20 md:px-12 lg:px-20">
+        <section className="bg-[#f2a07a] px-6 py-20 md:px-12 lg:px-20">
           <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
@@ -275,7 +275,7 @@ export default function CurriculumPage() {
 
             <Link
               href="/school-life"
-              className="inline-flex w-fit items-center rounded-full bg-[#0d2238] px-7 py-4 font-semibold text-white transition hover:bg-[#081827]"
+              className="inline-flex w-fit items-center rounded-full bg-[#174a70] px-7 py-4 font-semibold text-white transition hover:bg-[#0d2f4a]"
             >
               Explore School Life →
             </Link>

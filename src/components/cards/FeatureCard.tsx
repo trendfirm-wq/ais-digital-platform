@@ -42,7 +42,7 @@ export default function FeatureCard({
         />
 
         {/* OVERLAY */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#081827] via-[#081827]/35 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0d2f4a] via-[#0d2f4a]/35 to-transparent" />
 
         {/* NUMBER */}
         <div className="absolute left-6 top-6">
@@ -53,7 +53,7 @@ export default function FeatureCard({
 
         {/* CONTENT */}
         <div className="absolute inset-x-0 bottom-0 p-7 md:p-8">
-          <span className="mb-3 block text-xs font-bold uppercase tracking-[0.22em] text-[#e8752b]">
+          <span className="mb-3 block text-xs font-bold uppercase tracking-[0.22em] text-[#f2a07a]">
             {category}
           </span>
 
