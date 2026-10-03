@@ -10,6 +10,8 @@ import NewsEvents from "@/components/home/NewsEvents";
 import GalleryPreview from "@/components/home/GalleryPreview";
 import AdmissionsCTA from "@/components/home/AdmissionsCTA";
 import Footer from "@/components/layout/Footer";
+import UniformPreview from "@/components/home/UniformPreview";
+import LeadershipPreview from "@/components/home/LeadershipPreview";
 
 export default function Home() {
   return (
@@ -21,12 +23,15 @@ export default function Home() {
       <AboutPreview />
       <AcademicsPreview />
       <SchoolLife />
-   <FacilitiesPreview />
-<StudentStories />
-<NewsEvents />
-<GalleryPreview />
-<AdmissionsCTA />
-<Footer />
+      <LeadershipPreview />
+      <UniformPreview />
+      <FacilitiesPreview />
+      <StudentStories />
+      <NewsEvents />
+      <GalleryPreview />
+      <AdmissionsCTA />
+
+      <Footer />
     </main>
   );
 }

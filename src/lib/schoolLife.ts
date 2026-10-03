@@ -72,24 +72,23 @@ export const schoolLife: Record<string, ExperienceData> = {
     },
   },
 
-  leadership: {
-    category: "School Life",
-    title: "Leadership",
-    intro: "Preparing students to take responsibility and make a difference.",
-    description:
-      "This section will showcase approved AIS student leadership opportunities, responsibilities, initiatives and service experiences.",
-    image: "/images/school-life/leadership.jpg",
-    highlights: [
-      "Student Leadership",
-      "Responsibility",
-      "Service",
-      "Initiative",
-      "Collaboration",
-      "Community Impact",
-    ],
-    previous: {
-      label: "Arts & Culture",
-      href: "/school-life/arts-culture",
-    },
+ leadership: {
+  category: "School Life",
+  title: "Student Leadership",
+  intro: "Preparing students to take responsibility and make a difference.",
+  description:
+    "AIS provides opportunities for students to develop leadership, responsibility, initiative and a spirit of service through participation in school and community activities.",
+  image: "/images/school-life/leadership.jpg",
+  highlights: [
+    "Student Leadership",
+    "Responsibility",
+    "Service",
+    "Initiative",
+    "Collaboration",
+    "Community Impact",
+  ],
+  previous: {
+    label: "Arts & Culture",
+    href: "/school-life/arts-culture",
   },
-};
+},

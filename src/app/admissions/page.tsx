@@ -312,7 +312,171 @@ export default function AdmissionsPage() {
             </div>
           </div>
         </section>
+{/* =====================================================
+    2026/2027 FEES
+===================================================== */}
 
+<section
+  id="fees"
+  className="bg-[#f8f6f2] px-6 py-20 md:px-12 lg:px-20 lg:py-28"
+>
+  <div className="mx-auto max-w-7xl">
+
+    <div className="max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
+        2026/2027 Academic Year
+      </p>
+
+      <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-5xl">
+        Fees &amp; Admission Package
+      </h2>
+
+      <p className="mt-6 text-lg leading-8 text-[#5f6367]">
+        Explore the official first-term fees for the 2026/2027 academic
+        year at T. I. Ahmadiyya International School.
+      </p>
+    </div>
+
+    {/* Admission Package */}
+    <div className="mt-12 rounded-[2rem] bg-[#174a70] p-8 text-white md:p-10">
+
+      <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
+            Admission Package
+          </p>
+
+          <h3 className="mt-3 text-4xl font-semibold">
+            GHS 800
+          </h3>
+
+          <p className="mt-3 max-w-xl leading-7 text-white/70">
+            The admission package consists of the admission form,
+            entrance examination and admission fee.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-3 gap-3">
+
+          <div className="rounded-2xl bg-white/10 p-5">
+            <p className="text-xs uppercase tracking-wider text-white/60">
+              Form
+            </p>
+            <p className="mt-2 font-semibold">
+              GHS 100
+            </p>
+          </div>
+
+          <div className="rounded-2xl bg-white/10 p-5">
+            <p className="text-xs uppercase tracking-wider text-white/60">
+              Exam
+            </p>
+            <p className="mt-2 font-semibold">
+              GHS 100
+            </p>
+          </div>
+
+          <div className="rounded-2xl bg-[#f2a07a] p-5 text-[#174a70]">
+            <p className="text-xs uppercase tracking-wider text-[#174a70]/60">
+              Admission
+            </p>
+            <p className="mt-2 font-semibold">
+              GHS 600
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    {/* Fee Table */}
+    <div className="mt-8 overflow-hidden rounded-[2rem] border border-[#e2e2e2] bg-white">
+
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[650px] border-collapse">
+
+          <thead>
+            <tr className="bg-[#174a70] text-left text-white">
+              <th className="px-6 py-5 text-sm font-semibold md:px-8">
+                School Level
+              </th>
+
+              <th className="px-6 py-5 text-sm font-semibold md:px-8">
+                Day
+              </th>
+
+              <th className="px-6 py-5 text-sm font-semibold md:px-8">
+                Boarding
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr className="border-t border-[#e2e2e2]">
+              <td className="px-6 py-6 font-semibold text-[#174a70] md:px-8">
+                Preschool / Lower Primary
+              </td>
+
+              <td className="px-6 py-6 font-semibold md:px-8">
+                GHS 4,375
+              </td>
+
+              <td className="px-6 py-6 font-semibold md:px-8">
+                GHS 8,590
+              </td>
+            </tr>
+
+            <tr className="border-t border-[#e2e2e2] bg-[#f8f6f2]">
+              <td className="px-6 py-6 font-semibold text-[#174a70] md:px-8">
+                Upper Primary
+              </td>
+
+              <td className="px-6 py-6 font-semibold md:px-8">
+                GHS 4,750
+              </td>
+
+              <td className="px-6 py-6 font-semibold md:px-8">
+                GHS 9,850
+              </td>
+            </tr>
+
+            <tr className="border-t border-[#e2e2e2]">
+              <td className="px-6 py-6 font-semibold text-[#174a70] md:px-8">
+                JHS
+              </td>
+
+              <td className="px-6 py-6 font-semibold md:px-8">
+                GHS 5,125
+              </td>
+
+              <td className="px-6 py-6 font-semibold md:px-8">
+                GHS 11,230
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+
+    </div>
+
+    {/* Note */}
+    <div className="mt-6 rounded-2xl border border-[#f2a07a]/30 bg-white p-6">
+      <p className="text-sm leading-7 text-[#5f6367]">
+        <span className="font-semibold text-[#174a70]">
+          Please note:
+        </span>{" "}
+        The first-term totals include the GHS 800 admission package.
+        Uniform and books are not included.
+      </p>
+    </div>
+
+  </div>
+</section>
         {/* =====================================================
             IMPORTANT INFORMATION
         ===================================================== */}
