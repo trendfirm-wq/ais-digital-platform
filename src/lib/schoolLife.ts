@@ -91,4 +91,3 @@ export const schoolLife: Record<string, ExperienceData> = {
     label: "Arts & Culture",
     href: "/school-life/arts-culture",
   },
-},
