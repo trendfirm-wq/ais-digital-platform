@@ -118,46 +118,7 @@ export default function HeroCarousel({
       )}
 
       {/* Scroll indicator */}
-      <div
-        className="
-          absolute
-          bottom-9
-          right-6
-          z-30
-          hidden
-          items-center
-          gap-4
-          lg:flex
-        "
-      >
-        <div
-          className="
-            flex
-            h-12
-            w-7
-            items-start
-            justify-center
-            rounded-full
-            border
-            border-white/50
-            p-1.5
-          "
-        >
-          <span
-            className="
-              h-2
-              w-1
-              animate-bounce
-              rounded-full
-              bg-white
-            "
-          />
-        </div>
-
-        <span className="max-w-[90px] text-xs leading-4 text-white/70">
-          Scroll to explore
-        </span>
-      </div>
+      
     </section>
   );
 }

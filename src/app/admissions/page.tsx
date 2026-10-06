@@ -477,51 +477,7 @@ export default function AdmissionsPage() {
 
   </div>
 </section>
-        {/* =====================================================
-            IMPORTANT INFORMATION
-        ===================================================== */}
-
-        <section className="bg-white px-6 py-20 md:px-12 lg:px-20 lg:py-28">
-
-          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-
-            <div>
-
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f2a07a]">
-                Admissions Information
-              </p>
-
-              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-[#174a70] md:text-5xl">
-                Official information will be available here.
-              </h2>
-
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-
-              {[
-                "Admission requirements",
-                "Application process",
-                "Required documents",
-                "Fees & tuition",
-                "Important dates",
-                "Placement information",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl bg-[#ffffff] px-6 py-5"
-                >
-                  <span className="font-medium text-[#174a70]">
-                    {item}
-                  </span>
-                </div>
-              ))}
-
-            </div>
-
-          </div>
-        </section>
-
+        
         {/* =====================================================
             CTA
         ===================================================== */}

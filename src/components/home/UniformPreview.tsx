@@ -51,14 +51,8 @@ export default function UniformPreview() {
                 Girls
               </p>
 
-              <h3 className="mt-2 text-3xl font-semibold text-white">
-                Girls' Uniform
-              </h3>
-
-              <p className="mt-2 max-w-md text-sm leading-6 text-white/80">
-                Our distinctive school dress combines the AIS colours and
-                identity in a smart, comfortable design.
-              </p>
+              
+             
             </div>
           </div>
 

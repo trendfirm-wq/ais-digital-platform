@@ -221,14 +221,14 @@ export default function LeadershipPage() {
                   }}
                 />
 
-                <div className="absolute inset-0 flex items-center justify-center bg-[#174a70]">
-
-                  <div className="flex h-40 w-40 items-center justify-center rounded-full border border-white/20 bg-white/10 text-4xl font-semibold text-white">
-                    {getInitials(chairman.name)}
-                  </div>
-
-                </div>
-
+               <div className="absolute inset-0 flex items-center justify-center bg-[#174a70]">
+  <Image
+    src="/images/leadership/chairman.jpg"
+    alt={chairman.name}
+    fill
+    className="object-cover"
+  />
+</div>
               </div>
 
 
@@ -301,15 +301,20 @@ export default function LeadershipPage() {
 
                   <div className="flex items-start justify-between">
 
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#174a70] text-sm font-semibold text-white transition duration-300 group-hover:bg-[#f2a07a]">
-                      {getInitials(person.name)}
-                    </div>
+  <div className="relative h-16 w-16 overflow-hidden rounded-full bg-[#174a70] transition duration-300 group-hover:bg-[#f2a07a]">
+    <Image
+      src="/images/leadership/chairman.jpg"
+      alt={person.name}
+      fill
+      className="object-cover"
+    />
+  </div>
 
-                    <span className="text-sm font-semibold text-[#f2a07a]">
-                      {String(index + 2).padStart(2, "0")}
-                    </span>
+  <span className="text-sm font-semibold text-[#f2a07a]">
+    {String(index + 2).padStart(2, "0")}
+  </span>
 
-                  </div>
+</div>
 
 
                   <div className="mt-12">

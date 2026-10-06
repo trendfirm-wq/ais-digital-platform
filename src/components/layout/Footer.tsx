@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-
 const exploreLinks = [
   { label: "About AIS", href: "/about" },
   { label: "Academics", href: "/academics" },
@@ -63,21 +63,28 @@ export default function Footer() {
         {/* Links */}
         <div className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
-          <div>
-            <Link href="/" className="inline-flex items-center gap-4">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 text-lg font-black tracking-tight">
-                AIS
-              </div>
+          {/* Brand */}
+<div>
+  <Link href="/about" className="inline-flex items-center gap-4">
+    <div className="relative h-16 w-16">
+      <Image
+        src="/images/brand/ais-logo.png"
+        alt="T.I. Ahmadiyya International School"
+        fill
+        className="object-contain"
+      />
+    </div>
 
-              <div>
-                <p className="text-sm font-bold uppercase tracking-[0.12em]">
-                  T.I. Ahmadiyya
-                </p>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/50">
-                  International School
-                </p>
-              </div>
-            </Link>
+    <div>
+      <p className="text-sm font-bold uppercase tracking-[0.12em]">
+        T.I. Ahmadiyya
+      </p>
+      <p className="text-xs uppercase tracking-[0.18em] text-white/50">
+        International School
+      </p>
+    </div>
+  </Link>
+
 
             <p className="mt-6 max-w-xs text-sm leading-6 text-white/50">
               Best Among Equals

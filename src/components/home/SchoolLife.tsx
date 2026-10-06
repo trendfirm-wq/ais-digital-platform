@@ -45,7 +45,7 @@ const experiences = [
 
 export default function SchoolLife() {
   return (
-    <section className="relative overflow-hidden bg-[#ffffff] py-24 md:py-32">
+<section className="relative overflow-hidden bg-[#ffffff] py-12 md:py-5">
       <Parallax
         className="pointer-events-none absolute right-[-4%] top-20 hidden select-none text-[12rem] font-black uppercase leading-none tracking-[-0.08em] text-[#174a70]/[0.035] lg:block xl:text-[18rem]"
         y={100}

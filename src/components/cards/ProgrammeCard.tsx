@@ -86,9 +86,9 @@ export default function ProgrammeCard({
       {/* Content */}
       <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
 
-        <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-[var(--ais-orange)]">
-          {level}
-        </p>
+       <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-white">
+  {level}
+</p>
 
         <h3
           className="

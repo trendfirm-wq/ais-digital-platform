@@ -187,28 +187,7 @@ export default function DiscoverAIS() {
                   {item.number}
                 </span>
 
-                <span
-                  className="
-                    flex
-                    h-9
-                    w-9
-                    items-center
-                    justify-center
-                    rounded-full
-                    border
-                    border-[var(--ais-border)]
-                    text-sm
-                    text-[var(--ais-blue)]
-                    transition-all
-                    duration-300
-                    group-hover:translate-x-1
-                    group-hover:border-white/20
-                    group-hover:bg-white/10
-                    group-hover:text-white
-                  "
-                >
-                  ↗
-                </span>
+               
               </div>
 
               {/* =================================================
