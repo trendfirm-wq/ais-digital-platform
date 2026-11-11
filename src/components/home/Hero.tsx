@@ -4,7 +4,7 @@ import { HeroSlideData } from "@/types";
 const heroSlides: HeroSlideData[] = [
   {
     id: 1,
-    image: "/images/hero/ais-campus.jpg",
+    image: "/images/hero/ais-students.jpg",
     eyebrow: "Best Among Equals",
     title: "Inspiring excellence for a brighter future.",
     description:
@@ -21,7 +21,7 @@ const heroSlides: HeroSlideData[] = [
 
   {
     id: 2,
-    image: "/images/hero/ais-students.jpg",
+    image: "/images/hero/ais-campus.jpg",
     eyebrow: "Learning & Discovery",
     title: "Where curiosity becomes opportunity.",
     description:
